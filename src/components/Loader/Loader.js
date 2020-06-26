@@ -9,8 +9,8 @@ function Loader() {
           <img
             className="zmdi-hc-spin"
             src={logo.url}
-            width="48"
-            height="48"
+            width="auto"
+            height="100px"
             alt={logo.alt}
           />
         </div>
