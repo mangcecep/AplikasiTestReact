@@ -1,35 +1,64 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Heading from "../../components/Header";
+import Footer from "../../components/Footer";
 import styled from "styled-components";
 
-import { backgorundColor } from "../../components/images";
+import { backgroundTestimonial, loginWrapper } from "../../components/images";
 
-const Part = styled.nav`
-  background: url(${backgorundColor.url});
-  background-size: auto;
-  background-repeat: no-repeat;
-`;
+const Testimonial = styled.section``;
+
+const testimonial = [1, 2, 3];
 
 const Home = () => {
   return (
-    <Part className="container-fluid mx-auto pt-4">
+    <div className="container">
       <Navbar />
-      <div className="authentication">
-        <div className="content">
-          <div className="row clearfix">
-            <div className="col-lg-12 col-md-12">
-              <strong>
-                <h1 className="title text-center">
-                  "Senang rasanya jadi ngerti tentang diri sendiri.
-                  <br /> Bisa ngerjain sesuatu sesuai dengan potensi diri yang
-                  sebenernya!"
-                </h1>
-              </strong>
-            </div>
+      <Heading />
+      <div className="container">
+        <h3>Testimonial</h3>
+        <div className="row clearfix">
+          <div className="col-lg-4 col-md-12 col-sm-12">
+            <img src={loginWrapper.url} alt={loginWrapper.url} />
+            <img
+              src={backgroundTestimonial.url}
+              alt={backgroundTestimonial.alt}
+            />
+          </div>
+
+          <div className="col-lg-8 col-md-12 col-sm-12 float-left text-center">
+            {testimonial.map((index, testimoni) => (
+              <div
+                key={index}
+                className="card state_w1 bg-danger ml-4"
+                style={{ width: "16rem", height: "auto" }}
+              >
+                <div className="header">
+                  <img
+                    src="assets/images/profile_av.jpg"
+                    className="rounded-circle ml-4"
+                    alt="profile-image"
+                    width="70px"
+                    height="auto"
+                  />
+                </div>
+                <div className="body bg-danger text-light">
+                  <p>
+                    lorem ipsum <br />
+                    <strong>lorem ipsum</strong> <br />
+                    Lorem ipsum dolor sit a <br />
+                    consectetur adipsiscing elit <br />
+                    Maecnas Vairus.
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </Part>
+
+      <Footer />
+    </div>
   );
 };
 

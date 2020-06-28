@@ -4,9 +4,9 @@
 }
 
 .logo {
-  width: 300px;
+  width: 230px;
   height: auto;
-  margin-top: -25px;
+  margin-top: -20px;
 }
 
 .transbox {
@@ -18,10 +18,6 @@
   margin-top: 20px;
   overflow: hidden;
   background-color: none;
-}
-
-.topnav .logo {
-  margin-bottom: 10px;
 }
 
 .topnav a {
@@ -69,7 +65,6 @@
 @media screen and (max-width: 600px) {
   .logo {
     margin-top: 10px;
-    width: 200px;
     position: relative;
   }
   .topnav.responsive {

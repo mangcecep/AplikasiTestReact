@@ -29,13 +29,19 @@ const Input = styled.input`
   width: 100%;
 `;
 
+const RowClearfix = styled.div`
+  @media screen and (max-width: 1400px) {
+    margin-top: 150px;
+  }
+`;
+
 const FormWrapper = styled.div``;
 function FormLogin() {
   return (
     <div className="row clearfix" style={{ marginTop: "-108px" }}>
       <FormWrapper className="col-lg-6 col-sm-12">
         <div className="authentication pl-4 pr-4 mr-4 ml-4">
-          <div className="card">
+          <RowClearfix className="card">
             <form>
               <div className="header">
                 <h4>
@@ -83,19 +89,23 @@ function FormLogin() {
                 <strong>Masuk</strong>
               </button>
               <div className="mt-5">
-                <p className="mb-0">Belum punya akun? Daftar</p>
+                <p className="mb-0">
+                  Belum punya akun? <Link to="register">Daftar</Link>
+                </p>
               </div>
             </form>
-          </div>
+          </RowClearfix>
         </div>
       </FormWrapper>
 
       <BgWrapper className="col-lg-6 col-sm-12">
-        <div className="authentication">
-          <div className="card">
-            <img src={backgroundLogin.url} alt={backgroundLogin.alt} />
+        <RowClearfix>
+          <div className="authentication">
+            <div className="card">
+              <img src={backgroundLogin.url} alt={backgroundLogin.alt} />
+            </div>
           </div>
-        </div>
+        </RowClearfix>
       </BgWrapper>
       <FooterImage
         className="col-lg-12 col-sm-12"
