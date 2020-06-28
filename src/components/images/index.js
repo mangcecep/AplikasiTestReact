@@ -7,6 +7,11 @@ import instagramIcons from "../../GlobalAsset/instagram-sketched.png";
 import waIcons from "../../GlobalAsset/whatsapp.png";
 import emailIcons from "../../GlobalAsset/email-3.png";
 import backgorundTestimoni from "../../GlobalAsset/Review-02.png";
+import trustOne from "../../GlobalAsset/Features-04.png";
+import trustTwo from "../../GlobalAsset/Features-03.png";
+import trustThree from "../../GlobalAsset/Features-05.png";
+import greenBackground from "../../GlobalAsset/Group 11.jpg";
+import button from "../../GlobalAsset/Group 9.png";
 
 export const logo = {
   url: logoUrl,
@@ -51,4 +56,29 @@ export const emailIcon = {
 export const backgroundTestimonial = {
   url: backgorundTestimoni,
   alt: "back ground testimoni",
+};
+
+export const trustImageOne = {
+  url: trustOne,
+  alt: "trus one image",
+};
+
+export const trustImageTwo = {
+  url: trustTwo,
+  alt: "trus two image",
+};
+
+export const trustImageThree = {
+  url: trustThree,
+  alt: "trus three image",
+};
+
+export const greenBackgroundImage = {
+  url: greenBackground,
+  alt: "green backgorund",
+};
+
+export const buttonImage = {
+  url: button,
+  alt: "button",
 };

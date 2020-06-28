@@ -2,6 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # clone
 
+    in terminal :
+    `git clone https://gitlab.com/getplatformdev/shiokaya-revamp.git` or
+    `git clone git@gitlab.com:getplatformdev/shiokaya-revamp.git`
+
 # in terminal :
 
     1. cd directory
