@@ -12,6 +12,15 @@ import trustTwo from "../../GlobalAsset/Features-03.png";
 import trustThree from "../../GlobalAsset/Features-05.png";
 import greenBackground from "../../GlobalAsset/Group 11.jpg";
 import button from "../../GlobalAsset/Group 9.png";
+import helloPng from "../../GlobalAsset/Hello-09.png";
+import group16 from "../../GlobalAsset/Group 16.png";
+import pathCopy16 from "../../GlobalAsset/Path Copy.png";
+import path from "../../GlobalAsset/Path.png";
+import group32 from "../../GlobalAsset/Group 32.jpg";
+import group33 from "../../GlobalAsset/Group 33.jpg";
+import group29 from "../../GlobalAsset/Group 29.jpg";
+import group31 from "../../GlobalAsset/Group 31.jpg";
+import group9 from "../../GlobalAsset/Group 9.png";
 
 export const logo = {
   url: logoUrl,
@@ -81,4 +90,49 @@ export const greenBackgroundImage = {
 export const buttonImage = {
   url: button,
   alt: "button",
+};
+
+export const helloPngImage = {
+  url: helloPng,
+  alt: "hello png image",
+};
+
+export const group16Image = {
+  url: group16,
+  alt: "group16 Image",
+};
+
+export const pathCopy16Image = {
+  url: pathCopy16,
+  alt: "pathCopy16 image",
+};
+
+export const pathImage = {
+  url: path,
+  alt: "path",
+};
+
+export const gorup32Image = {
+  url: group32,
+  alt: "group 32 image",
+};
+
+export const gorup33Image = {
+  url: group33,
+  alt: "group 33 image",
+};
+
+export const gorup29Image = {
+  url: group29,
+  alt: "group 29 image",
+};
+
+export const gorup31Image = {
+  url: group31,
+  alt: "group 31 image",
+};
+
+export const group9Image = {
+  url: group9,
+  alt: "group 9 image",
 };

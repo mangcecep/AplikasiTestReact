@@ -2,6 +2,7 @@ import React from "react";
 
 import { greenBackgroundImage, buttonImage } from "../images";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Content = styled.div`
   .background {
@@ -40,14 +41,16 @@ function Test() {
               Lorem ipsum dolor sit amet consectetur <br />
               adipiscing elit
             </h4>
-            <img
-              src={buttonImage.url}
-              alt={buttonImage.alt}
-              width="150px"
-              height="auto"
-              className="button"
-            />
-            <p>Ikuti Test</p>
+            <Link to="/welcome">
+              <img
+                src={buttonImage.url}
+                alt={buttonImage.alt}
+                width="150px"
+                height="auto"
+                className="button"
+              />
+              <p>Ikuti Test</p>
+            </Link>
           </Content>
         </div>
       </div>

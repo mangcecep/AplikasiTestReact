@@ -20,3 +20,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
     1. Home     : http://localhost:3000
     2. Login    : http://localhost:3000/login
+    3. welcome  : http://localhost:3000/welcome

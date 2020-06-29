@@ -3,6 +3,8 @@ import ReactPlayer from "react-player";
 import styled from "styled-components";
 import { backgorundColor } from "../images";
 
+import { Link } from "react-router-dom";
+
 const Header = styled.section`
   margin-top: -108px;
   padding-bottom
@@ -66,9 +68,9 @@ function Heading() {
                 keberhasilan dan kekayaan, dengan efektif dan efisien."
               </strong>
             </p>
-            <button className="btn-lg btn-round bg-purple">
+            <Link to="/welcome" className="btn-lg btn-round bg-purple">
               Ikuti Test <i className="zmdi zmdi-hc-fw"></i>
-            </button>
+            </Link>
           </div>
         </div>
       </Header>
