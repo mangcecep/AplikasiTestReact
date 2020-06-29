@@ -21,6 +21,13 @@ import group33 from "../../GlobalAsset/Group 33.jpg";
 import group29 from "../../GlobalAsset/Group 29.jpg";
 import group31 from "../../GlobalAsset/Group 31.jpg";
 import group9 from "../../GlobalAsset/Group 9.png";
+import checkList07 from "../../GlobalAsset/Check List-07.png";
+import containerCarousel from "../../GlobalAsset/Rectangle 2.png";
+
+export const containerCarouselBackground = {
+  url: containerCarousel,
+  alt: "container carousel image",
+};
 
 export const logo = {
   url: logoUrl,
@@ -135,4 +142,9 @@ export const gorup31Image = {
 export const group9Image = {
   url: group9,
   alt: "group 9 image",
+};
+
+export const checkList07Image = {
+  url: checkList07,
+  alt: "check List 07 image",
 };

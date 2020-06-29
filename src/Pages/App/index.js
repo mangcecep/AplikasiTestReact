@@ -7,6 +7,7 @@ import Home from "../Home";
 import Login from "../Login";
 import Welcome from "../Welcome";
 import TwelveQuestions from "../TweleveQuestions";
+import TwelveQuestionsEnd from "../TwelveQuestionsEnd";
 
 const App = () => {
   return (
@@ -56,6 +57,7 @@ const App = () => {
           <Route path="/login" component={Login} />
           <Route path="/welcome" component={Welcome} />
           <Route path="/twelve-questions" component={TwelveQuestions} />
+          <Route path="/twelve-questions-end" component={TwelveQuestionsEnd} />
         </Switch>
       </Router>
     </>
