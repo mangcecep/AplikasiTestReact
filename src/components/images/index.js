@@ -23,6 +23,90 @@ import group31 from "../../GlobalAsset/Group 31.jpg";
 import group9 from "../../GlobalAsset/Group 9.png";
 import checkList07 from "../../GlobalAsset/Check List-07.png";
 import containerCarousel from "../../GlobalAsset/Rectangle 2.png";
+import look10png from "../../GlobalAsset/Look-10.png";
+import backgroundLayerCopy from "../../GlobalAsset/Background Layer Copy.png";
+import Group2copying from "../../GlobalAsset/Group 2 copying.png";
+import Pathcopyagainpng from "../../GlobalAsset/Path copyagain.png";
+import priest from "../../GlobalAsset/priest.png";
+import Group3png from "../../GlobalAsset/Group 3.png";
+import PathKopi from "../../GlobalAsset/Path Kopi.png";
+import Group2Copy from "../../GlobalAsset/Group 2 Copy.png";
+import marshal3 from "../../GlobalAsset/marshal3.png";
+import PathCopy2 from "../../GlobalAsset/Path Copy 2.png";
+import Rectanglejpg from "../../GlobalAsset/Rectangle.jpg";
+import profile1 from "../../GlobalAsset/profile1.png";
+import profile2 from "../../GlobalAsset/profile2.png";
+import profile3 from "../../GlobalAsset/profile3.png";
+
+export const profile1Image = {
+  url: profile1,
+  alt: "profile 1 png",
+};
+
+export const profile2Image = {
+  url: profile2,
+  alt: "profile 2 png",
+};
+
+export const profile3Image = {
+  url: profile3,
+  alt: "profile 3 png",
+};
+
+export const RectanglejpgImage = {
+  url: Rectanglejpg,
+  alt: "Rectangle jpg image",
+};
+
+export const PathCopy2Image = {
+  url: PathCopy2,
+  alt: "Path Copy 2 png",
+};
+
+export const marshal3Image = {
+  url: marshal3,
+  alt: "marshal 3 png",
+};
+
+export const Group2CopyImage = {
+  url: Group2Copy,
+  alt: "Group 2 Copy png",
+};
+
+export const PathKopiimage = {
+  url: PathKopi,
+  alt: "Path Kopi png",
+};
+
+export const Group3pngImage = {
+  url: Group3png,
+  alt: "Group 3 png",
+};
+
+export const priestImage = {
+  url: priest,
+  alt: "priest image jpg",
+};
+
+export const PathcopyagainpngImage = {
+  url: Pathcopyagainpng,
+  alt: "Path copya gain png",
+};
+
+export const Group2copyingImage = {
+  url: Group2copying,
+  alt: "Group 2 copying png",
+};
+
+export const BackgroundLayerCopyImage = {
+  url: backgroundLayerCopy,
+  alt: "background Layer Copy png",
+};
+
+export const look10pngImage = {
+  url: look10png,
+  alt: "look 10 png",
+};
 
 export const containerCarouselBackground = {
   url: containerCarousel,

@@ -1,18 +1,16 @@
 import React from "react";
-
 import Navbar from "../../components/Navbar";
 import HeaderTwelveQuestion from "../../components/HeaderTwelveQuestion";
 import Footer from "../../components/Footer";
-import TwelveQuest from "../../components/TwelveQuest";
+import FormTwelve from "../../components/FormTwelve";
 
-// import styled from "styled-components";
-
+// console.log(state.slideIndex);
 const TwelveQuestions = () => {
   return (
     <div className="container">
       <Navbar />
       <HeaderTwelveQuestion />
-      <TwelveQuest />
+      <FormTwelve />
       <Footer />
     </div>
   );

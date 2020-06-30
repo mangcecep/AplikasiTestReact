@@ -1,6 +1,12 @@
 import React from "react";
-import { backgroundTestimonial, loginWrapper } from "../../components/images";
-const testimonial = [1, 2, 3];
+import {
+  backgroundTestimonial,
+  loginWrapper,
+  profile1Image,
+  profile2Image,
+  profile3Image,
+} from "../images";
+import ProfileTestimonial from "../ProfileTestimonial";
 
 function Testimonials() {
   return (
@@ -25,32 +31,19 @@ function Testimonials() {
         </div>
 
         <div className="col-lg-7 col-md-12 col-sm-12 float-left">
-          {testimonial.map((index, testimoni) => (
-            <div
-              key={index}
-              className="card state_w1 bg-danger ml-4"
-              style={{ width: "17rem", height: "auto" }}
-            >
-              <div className="header">
-                <img
-                  src="assets/images/profile_av.jpg"
-                  className="rounded-circle ml-4"
-                  alt="profile-image"
-                  width="70px"
-                  height="auto"
-                />
-              </div>
-              <div className="body bg-danger text-light">
-                <p>
-                  lorem ipsum <br />
-                  <strong>lorem ipsum</strong> <br />
-                  Lorem ipsum dolor sit amet <br />
-                  consectetur adipsiscing elit <br />
-                  Maecnas Vairus.
-                </p>
-              </div>
-            </div>
-          ))}
+          <ProfileTestimonial
+            ProfileTestimonial={profile1Image.url}
+            ProfileTestimonialAlt={profile1Image.alt}
+            bgStyle="bg-danger text-light"
+          />
+          <ProfileTestimonial
+            ProfileTestimonial={profile2Image.url}
+            ProfileTestimonialAlt={profile2Image.alt}
+          />
+          <ProfileTestimonial
+            ProfileTestimonial={profile3Image.url}
+            ProfileTestimonialAlt={profile3Image.alt}
+          />
         </div>
       </div>
     </section>
