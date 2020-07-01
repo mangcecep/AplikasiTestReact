@@ -115,7 +115,7 @@ function HeaderTwelveQuestionResult() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6 my-auto">
               <h4>
-                <strog>Priest</strog>
+                <strong>Priest</strong>
               </h4>
               <p className="content">
                 Menjalani instruksi dan prosedur secara baik, tidak <br />
@@ -160,7 +160,7 @@ function HeaderTwelveQuestionResult() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6 my-auto">
               <h4>
-                <strog>Marshal</strog>
+                <strong>Marshal</strong>
               </h4>
               <p className="content">
                 Mengutamakan hal yang dianggap prioritas <br />

@@ -7,7 +7,7 @@ import NumberImage from "../../components/NumberImage";
 const Welcome = () => {
   return (
     <div className="container">
-      <Navbar />
+      <Navbar loginProp={{ isLogin: false }} />
       <Header />
       <NumberImage />
       <Footer />

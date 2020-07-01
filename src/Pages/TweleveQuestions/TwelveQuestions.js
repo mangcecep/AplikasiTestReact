@@ -8,7 +8,7 @@ import FormTwelve from "../../components/FormTwelve";
 const TwelveQuestions = () => {
   return (
     <div className="container">
-      <Navbar />
+      <Navbar loginProp={{ isLogin: false }} />
       <HeaderTwelveQuestion />
       <FormTwelve />
       <Footer />

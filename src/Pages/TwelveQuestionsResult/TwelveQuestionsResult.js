@@ -7,7 +7,7 @@ import FormRegisterComp from "../../components/FormRegisterComponent";
 function TwelveQuestionsResult() {
   return (
     <div className="container">
-      <Navbar />
+      <Navbar loginProp={{ isLogin: false }} />
       <HeaderTwelveQuestionResult />
       <FormRegisterComp />
       <Footer />

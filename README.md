@@ -16,10 +16,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
     In the project directory, you can run:
 
+    0. list root                : http://localhost:3000/list
+
     ### `yarn start`
 
-    1. Home                     : http://localhost:3000
-    2. Login                    : http://localhost:3000/login
-    3. welcome                  : http://localhost:3000/welcome
-    4. Twelve Questions         : http://localhost:3000/twelve-questions
-    5. TwelveQuestionsResult    : http://localhost:3000/twelve-questions-result
+    1. Home                             : http://localhost:3000
+    2. Login                            : http://localhost:3000/login
+    3. welcome                          : http://localhost:3000/welcome
+    4. Twelve Questions                 : http://localhost:3000/twelve-questions
+    5. TwelveQuestions Result           : http://localhost:3000/twelve-questions-result
+    6. Fourty Eight Questions           : http://localhost:3000/fourty-eight-questions
+    7. Fourty Eight Result Questions    : http://localhost:3000/fourty-eight-result
+    8. Premium Page                     : http://localhost:3000/premium-page
+    9. profile                          : http://localhost:3000/profile

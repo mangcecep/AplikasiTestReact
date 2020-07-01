@@ -9,7 +9,7 @@ import Test from "../../components/Test";
 const Home = () => {
   return (
     <div className="container">
-      <Navbar />
+      <Navbar loginProp={{ isLogin: false }} />
       <Heading />
       <Testimonials />
       <Trust />

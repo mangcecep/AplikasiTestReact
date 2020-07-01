@@ -37,6 +37,24 @@ import Rectanglejpg from "../../GlobalAsset/Rectangle.jpg";
 import profile1 from "../../GlobalAsset/profile1.png";
 import profile2 from "../../GlobalAsset/profile2.png";
 import profile3 from "../../GlobalAsset/profile3.png";
+import BackgroundLayerCopy1 from "../../GlobalAsset/Background Layer Copy 1.png";
+import oval from "../../GlobalAsset/Oval.png";
+import Look211png from "../../GlobalAsset/Look 2-11.png";
+
+export const Look211pngImage = {
+  url: Look211png,
+  alt: "Look 2-11 png",
+};
+
+export const ovalPng = {
+  url: oval,
+  alt: "oval png",
+};
+
+export const BackgroundLayerCopy1Image = {
+  url: BackgroundLayerCopy1,
+  alt: "Background Layer Copy png",
+};
 
 export const profile1Image = {
   url: profile1,
