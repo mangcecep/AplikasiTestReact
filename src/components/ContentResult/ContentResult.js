@@ -1,11 +1,7 @@
 import React from "react";
-
+import ProfileResult from "../ProfileResult";
 import styled from "styled-components";
-import {
-  BackgroundLayerCopyImage,
-  BackgroundLayerCopy1Image,
-  ovalPng,
-} from "../images";
+import { BackgroundLayerCopyImage, ovalPng } from "../images";
 
 const ContentResult = styled.div`
   img.absolute {
@@ -50,27 +46,7 @@ function index() {
               hal, dan memanfaatkannya untuk keberhasilan yang lebih <br />
               besar
             </p>
-
-            <div className="row clearfix">
-              <div className="col-md-12 col-sm-12">
-                <strong>Elemen Kisama(Tanah)</strong>
-              </div>
-              <div className="col-md-6 col-sm-6">
-                <img
-                  src={BackgroundLayerCopy1Image.url}
-                  alt={BackgroundLayerCopy1Image.alt}
-                  width="70%"
-                  height="auto"
-                />
-              </div>
-              <div className="col-md-6 col-sm-6">
-                <h5>Warna Green</h5>
-                <br />
-                <h5>PENCARI PELUANG</h5>
-                <h5>PEDAGANG ALAMI</h5>
-                <h5>PENGGUNA WAKTU EFISIEN</h5>
-              </div>
-            </div>
+            <ProfileResult />
           </div>
         </div>
       </div>

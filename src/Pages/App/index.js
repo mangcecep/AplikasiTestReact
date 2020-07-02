@@ -38,6 +38,9 @@ const App = () => {
               <li>
                 <Link to="/profile">profile</Link>
               </li>
+              <li>
+                <Link to="/chart-sample">Chart Sample</Link>
+              </li>
             </ol>
           </div>
         </Route>

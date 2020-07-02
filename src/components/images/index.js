@@ -40,6 +40,12 @@ import profile3 from "../../GlobalAsset/profile3.png";
 import BackgroundLayerCopy1 from "../../GlobalAsset/Background Layer Copy 1.png";
 import oval from "../../GlobalAsset/Oval.png";
 import Look211png from "../../GlobalAsset/Look 2-11.png";
+import group9copypng from "../../GlobalAsset/Group 9 copy.png";
+
+export const group9copypngImage = {
+  url: group9copypng,
+  alt: "group 9 copy png",
+};
 
 export const Look211pngImage = {
   url: Look211png,

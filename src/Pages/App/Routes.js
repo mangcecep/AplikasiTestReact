@@ -9,6 +9,8 @@ import FourtyEightQuestions from "../FourtyEightQuestions";
 import FourtyEightResult from "../FourtyEightResult";
 import PremiumPage from "../PremiumPage/PremiumPage";
 import Profile from "../Profile";
+import ChartSampel from "../ChartSample";
+
 const Routes = () => {
   return (
     <>
@@ -28,6 +30,7 @@ const Routes = () => {
         <Route path="/fourty-eight-result" component={FourtyEightResult} />
         <Route path="/premium-page" component={PremiumPage} />
         <Route path="/profile" component={Profile} />
+        <Route path="/chart-sample" component={ChartSampel} />
       </Switch>
     </>
   );

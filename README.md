@@ -29,3 +29,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     7. Fourty Eight Result Questions    : http://localhost:3000/fourty-eight-result
     8. Premium Page                     : http://localhost:3000/premium-page
     9. profile                          : http://localhost:3000/profile
+    10.Chart Sample                     : http://localhost:3000/chart-sample
