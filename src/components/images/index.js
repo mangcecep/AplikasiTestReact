@@ -41,6 +41,24 @@ import BackgroundLayerCopy1 from "../../GlobalAsset/Background Layer Copy 1.png"
 import oval from "../../GlobalAsset/Oval.png";
 import Look211png from "../../GlobalAsset/Look 2-11.png";
 import group9copypng from "../../GlobalAsset/Group 9 copy.png";
+import BackgroundLayerCopyd from "../../GlobalAsset/Background Layer Copyd.png";
+import OvalCopypng from "../../GlobalAsset/Oval Copy.png";
+import star from "../../GlobalAsset/Star.png";
+
+export const starImage = {
+  url: star,
+  alt: "star image",
+};
+
+export const OvalCopypngImage = {
+  url: OvalCopypng,
+  alt: "Oval Copy png",
+};
+
+export const BackgroundLayerCopydImage = {
+  url: BackgroundLayerCopyd,
+  alt: "Background Layer Copyd png",
+};
 
 export const group9copypngImage = {
   url: group9copypng,

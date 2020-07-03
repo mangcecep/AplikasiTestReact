@@ -7,7 +7,7 @@ function YourProfile() {
       <div className="content">
         <div className="row clearfix">
           <div className="col-lg-12 col-md-12 col-sm-12">
-            <h3 className="text-center title">Profile anda</h3>
+            <h3 className="text-center title">Profile Anda</h3>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-6">
             <Chart />
