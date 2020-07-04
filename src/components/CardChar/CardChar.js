@@ -1,9 +1,18 @@
 import React from "react";
+import styled from "styled-components";
+
+import { RectangleCopy13jpgImage } from "../images";
+
+const Card = styled.div`
+  background-image: url("${RectangleCopy13jpgImage.url}");
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
 
 function CardChar(props) {
   const { title, text } = props;
   return (
-    <div className="container bg-blue text-dark">
+    <Card className="card text-dark pl-4 pt-2 pb-0">
       <div className="content">
         <div className="card">
           <div className="row clearfix">
@@ -16,7 +25,7 @@ function CardChar(props) {
           </div>
         </div>
       </div>
-    </div>
+    </Card>
   );
 }
 

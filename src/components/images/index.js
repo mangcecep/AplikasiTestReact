@@ -44,6 +44,60 @@ import group9copypng from "../../GlobalAsset/Group 9 copy.png";
 import BackgroundLayerCopyd from "../../GlobalAsset/Background Layer Copyd.png";
 import OvalCopypng from "../../GlobalAsset/Oval Copy.png";
 import star from "../../GlobalAsset/Star.png";
+import diagram from "../../GlobalAsset/diagram.png";
+import shio4 from "../../GlobalAsset/shio4.png";
+import BackgroundLayerCopycopypng from "../../GlobalAsset/Background Layer Copy copy.png";
+import sio2 from "../../GlobalAsset/sio2.png";
+import sio3 from "../../GlobalAsset/sio3.png";
+import sio from "../../GlobalAsset/sio.png";
+import BackgroundLayerCopycopy1png from "../../GlobalAsset/Background Layer Copy copy 1.png";
+import RectangleCopy13jpg from "../../GlobalAsset/Rectangle Copy 13.jpg";
+import RectangleCopy73jpg from "../../GlobalAsset/Rectangle Copy 73.jpg";
+
+export const RectangleCopy73jpgImage = {
+  url: RectangleCopy73jpg,
+  alt: "Rectangle Copy 73 jpg",
+};
+
+export const RectangleCopy13jpgImage = {
+  url: RectangleCopy13jpg,
+  alt: "Rectang leCopy 13 jpg",
+};
+
+export const BackgroundLayerCopycopy1pngImage = {
+  url: BackgroundLayerCopycopy1png,
+  alt: "Background Layer Copy copy1 png",
+};
+
+export const sioImage = {
+  url: sio,
+  alt: "sio image",
+};
+
+export const sio3Image = {
+  url: sio3,
+  alt: "sio 3 image",
+};
+
+export const shio2Image = {
+  url: sio2,
+  alt: "sio 2 image",
+};
+
+export const BackgroundLayerCopycopypngImage = {
+  url: BackgroundLayerCopycopypng,
+  alt: "Background Layer Copy copy png",
+};
+
+export const shio4Image = {
+  url: shio4,
+  alt: "shio 4 png",
+};
+
+export const diagramImage = {
+  url: diagram,
+  alt: "diagram image",
+};
 
 export const starImage = {
   url: star,

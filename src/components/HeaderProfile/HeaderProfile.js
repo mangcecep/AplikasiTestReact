@@ -8,17 +8,19 @@ const BgWrapper = styled.section`
     position: relative;
     background-image: url("${group9copypngImage.url}");
     background-repeat: no-repeat;
-    background-size: 99% 82%;
+    background-size: 100% 98.5%;
     .card img.char {
-      margin-top: -10px;
-      margin: 201px;
+      margin-top: 150px;
+      margin-left: 190px;
       background-color: white;
-      padding : 0px 50px 20px 40px;
-      height: 24rem;
+      padding : 50px 50px 50px 50px;
+      height: 30rem;
       width: auto;
+      box-shadow: 10px 10px 5px grey;
     }
     .card img.backgroundChar {
-      margin-top: -300px; 
+      margin-right: 30px;
+      margin-top: -55px; 
       float: right;
       width: 50%;
       height: auto;
