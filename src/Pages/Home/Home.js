@@ -8,14 +8,14 @@ import Test from "../../components/Test";
 
 const Home = () => {
   return (
-    <div className="container">
+    <>
       <Navbar loginProp={{ isLogin: false }} />
       <Heading />
       <Testimonials />
       <Trust />
       <Test />
       <Footer />
-    </div>
+    </>
   );
 };
 

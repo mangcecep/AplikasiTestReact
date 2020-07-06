@@ -8,7 +8,7 @@ import { look10pngImage } from "../images";
 
 function FormTwelve() {
   // const [settings, setSettings] = React.useState({});
-  const [state, setState] = React.useState({ slideIndex: 0, updateCount: 0 });
+  // const [state, setState] = React.useState({ slideIndex: 0, updateCount: 0 });
   const settings = {
     arrows: true,
     dots: false,
@@ -22,15 +22,15 @@ function FormTwelve() {
   return (
     <section>
       <form>
-        <p>Total updates: {state.updateCount} </p>
+        <p>Total updates: </p>
         <input
           // onChange={(e) => this.slider.slickGoTo(e.target.value)}
-          value={state.slideIndex}
+          // value={state.slideIndex}
           className="form-control mt-4"
           type="range"
           id="points"
           name="points"
-          min={state.slideIndex}
+          // min={state.slideIndex}
           max="3"
         />
         <fieldset>

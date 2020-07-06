@@ -18,7 +18,7 @@ const FormQuest = styled.section`
   }
 `;
 
-function FourtyEightQuestions() {
+const FourtyEightQuestions = () => {
   const [state, setState] = React.useState({ slideIndex: 0, updateCount: 0 });
   const settings = {
     arrows: true,
@@ -90,6 +90,6 @@ function FourtyEightQuestions() {
       <Footer />
     </div>
   );
-}
+};
 
 export default FourtyEightQuestions;

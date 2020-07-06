@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { Look211pngImage } from "../../components/images";
 
-function PremiumPage() {
+const PremiumPage = () => {
   return (
     <div className="container">
       <Navbar loginProp={{ isLogin: true }} />
@@ -55,6 +55,6 @@ function PremiumPage() {
       <Footer />
     </div>
   );
-}
+};
 
 export default PremiumPage;

@@ -1,11 +1,22 @@
 import React from "react";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import RadarChart from "react-svg-radar-chart";
 import "react-svg-radar-chart/build/css/index.css";
 
 import CanvasJSReact from "../../assets/canvasjs.react";
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-function ChartSampel() {
+const ChartSampel = () => {
+  const renderSlides = () =>
+    [1, 2, 3, 4, 5, 6, 7, 8].map((num, index) => (
+      <div key={index}>
+        <h3>Slide {num}</h3>
+      </div>
+    ));
   const options = {
     animationEnabled: true,
     exportEnabled: true,
@@ -72,8 +83,22 @@ function ChartSampel() {
       {/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
       <h1 className="mt-3">Radar – Multiple Series</h1>
       <RadarChart captions={captions} data={data} size={450} />
+
+      <div className="jumbotron">
+        <h2>Slide Show Sample Previous & Next Methods</h2>
+
+        <Slider
+          dots={false}
+          slidesToShow={1}
+          slidesToScroll={1}
+          autoplay={false}
+          autoplaySpeed={3000}
+        >
+          {renderSlides()}
+        </Slider>
+      </div>
     </div>
   );
-}
+};
 
 export default ChartSampel;

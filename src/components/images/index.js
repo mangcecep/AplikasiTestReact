@@ -53,6 +53,12 @@ import sio from "../../GlobalAsset/sio.png";
 import BackgroundLayerCopycopy1png from "../../GlobalAsset/Background Layer Copy copy 1.png";
 import RectangleCopy13jpg from "../../GlobalAsset/Rectangle Copy 13.jpg";
 import RectangleCopy73jpg from "../../GlobalAsset/Rectangle Copy 73.jpg";
+import Group3jpg from "../../GlobalAsset/Group 3.jpg";
+
+export const Group3jpgImage = {
+  url: Group3jpg,
+  alt: "background register button",
+};
 
 export const RectangleCopy73jpgImage = {
   url: RectangleCopy73jpg,

@@ -30,3 +30,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     8. Premium Page                     : http://localhost:3000/premium-page
     9. profile                          : http://localhost:3000/profile
     10.Chart Sample                     : http://localhost:3000/chart-sample
+    11.Slider Example                   : http://localhost:3000/slider-example

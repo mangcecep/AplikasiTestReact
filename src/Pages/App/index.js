@@ -41,6 +41,9 @@ const App = () => {
               <li>
                 <Link to="/chart-sample">Chart Sample</Link>
               </li>
+              <li>
+                <Link to="/slider-example">SLider Example</Link>
+              </li>
             </ol>
           </div>
         </Route>

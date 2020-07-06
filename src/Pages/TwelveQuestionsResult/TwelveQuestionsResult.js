@@ -4,7 +4,7 @@ import HeaderTwelveQuestionResult from "../../components/HeaderTwelveQuestionRes
 import Footer from "../../components/Footer";
 import FormRegisterComp from "../../components/FormRegisterComponent";
 
-function TwelveQuestionsResult() {
+const TwelveQuestionsResult = () => {
   return (
     <div className="container">
       <Navbar loginProp={{ isLogin: false }} />
@@ -13,6 +13,6 @@ function TwelveQuestionsResult() {
       <Footer />
     </div>
   );
-}
+};
 
 export default TwelveQuestionsResult;

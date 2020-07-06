@@ -5,6 +5,11 @@ import {
   backgroundLoginBase,
   loginWrapper,
 } from "../../components/images";
+
+import PoppinsThin from "../../assets/fonts/Poppins-Thin.ttf";
+import PoppinsMediumItalic from "../../assets/fonts/Poppins-MediumItalic.ttf";
+import PoppinsMedium from "../../assets/fonts/Poppins-Medium.ttf";
+
 import styled from "styled-components";
 
 const BgWrapper = styled.section`
@@ -35,7 +40,28 @@ const RowClearfix = styled.div`
   }
 `;
 
-const FormWrapper = styled.div``;
+const FormWrapper = styled.div`
+@font-face {
+  font-family: "Poppins Thin";
+  src: local("${PoppinsThin}"),
+    url("${PoppinsThin}") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins MediumItalic";
+  src: local("${PoppinsMediumItalic}"),
+    url("${PoppinsMediumItalic}") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins MediumItalic";
+  src: local("${PoppinsMedium}"),
+    url("${PoppinsMedium}") format("truetype");
+}
+
+font-family: 'Poppins MediumItalic';
+font-size: 12px;
+`;
 function FormLogin() {
   return (
     <div className="row clearfix" style={{ marginTop: "-108px" }}>
@@ -44,9 +70,9 @@ function FormLogin() {
           <RowClearfix className="card">
             <form>
               <div className="header">
-                <h4>
-                  <strong>Selamat Datang di Shiokaya!</strong>
-                </h4>
+                <h5>
+                  <strong>Selamat datang di Shiokaya!</strong>
+                </h5>
                 <br />
                 <h5>
                   Silahkan masukkan email dan token <br />
@@ -84,9 +110,11 @@ function FormLogin() {
 
               <button
                 type="submit"
-                className="btn bg-purple btn-primary btn-block btn-lg btn-round waves-effect waves-light"
+                className="buttonLogin btn bg-purple btn-primary btn-block btn-lg btn-round waves-effect waves-light"
               >
-                <strong>Masuk</strong>
+                <label>
+                  <strong>Masuk</strong>
+                </label>
               </button>
               <div className="mt-5">
                 <p className="mb-0">

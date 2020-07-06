@@ -10,10 +10,11 @@ import FourtyEightResult from "../FourtyEightResult";
 import PremiumPage from "../PremiumPage/PremiumPage";
 import Profile from "../Profile";
 import ChartSampel from "../ChartSample";
+import SliderExample from "../SliderExample";
 
 const Routes = () => {
   return (
-    <>
+    <div className="container">
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/login" component={Login} />
@@ -31,8 +32,9 @@ const Routes = () => {
         <Route path="/premium-page" component={PremiumPage} />
         <Route path="/profile" component={Profile} />
         <Route path="/chart-sample" component={ChartSampel} />
+        <Route path="/slider-example" component={SliderExample} />
       </Switch>
-    </>
+    </div>
   );
 };
 
