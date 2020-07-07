@@ -21,16 +21,24 @@ const Number = styled.section`
   p {
     font-size: 15px;
   }
-  img.button {
-    position: absolute;
-    margin-left: -70px;
-    margin-bottom: 70px;
-    z-index: -10;
-  }
+
   p.textbutton {
-    margin-top: 10px;
-    color: #fdfefe;
-    font-size: 17px;
+    background-image: url("${group9Image.url}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 420px) {
+    p.textbutton {
+      padding-left: 25px;
+      background-image: url("${group9Image.url}");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 25%;
+      font-size: 7px;
+    }
   }
 `;
 
@@ -105,14 +113,7 @@ function NumberImage() {
         <div className="col-lg-2 col-md-12 col-sm-12"></div>
         <div className="col-lg-12 col-md-12 col-sm-12 align-center mt-4">
           <Link to="/twelve-questions">
-            <img
-              src={group9Image.url}
-              alt={group9Image.alt}
-              width="20%"
-              height="auto"
-              className="button"
-            />
-            <p className="textbutton">Mulai Test</p>
+            <p className="textbutton text-white pr-5 pt-3 pb-4">Mulai Test</p>
           </Link>
         </div>
       </div>

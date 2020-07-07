@@ -5,8 +5,20 @@ import { backgorundColor } from "../images";
 
 import { Link } from "react-router-dom";
 
+import PoppinsMedium from "../../assets/fonts/Poppins-Medium.ttf";
+
 const Header = styled.section`
-  margin-top: -108px;
+@font-face {
+  font-family: "Poppins MediumItalic";
+  src: local("${PoppinsMedium}"),
+    url("${PoppinsMedium}") format("truetype");
+}
+
+font-family: 'Poppins MediumItalic';
+  background-image: url("${backgorundColor.url}");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
   padding-bottom
   margin: center;
   img {
@@ -23,43 +35,37 @@ const Player = styled.div`
 `;
 
 const Text = styled.div`
-  margin-top: 220px;
+  margin-top: 185px;
   p {
-    font-size: 33px;
+    font-size: 36px;
   }
 `;
 
 function Heading() {
   return (
-    <>
-      <Header>
-        <img src={backgorundColor.url} alt={backgorundColor.alt} />
-        <div className="row clearfix">
-          <div className="col-lg-12 col-md-12">
-            <Text className="text-center">
-              <p>
-                {" "}
-                <strong>
-                  "Senang rasanya jadi ngerti tentang diri sendiri. <br />
-                  Bisa ngerjain sesuatu sesuai dengan <br />
-                  potensi diri yang sebenernya"{" "}
-                </strong>
-              </p>
-            </Text>
-          </div>
-          <div className="col-lg-12 col-md-12">
-            <Player>
-              <ReactPlayer
-                className="react-player"
-                url="https://www.youtube.com/watch?v=B9Wz-RwYr_Y"
-                width={720}
-              />
-            </Player>
-          </div>
+    <Header className="container">
+      <div className="row clearfix" style={{ marginTop: "-108px" }}>
+        <div className="col-lg-12 col-md-12 col-sm-12">
+          <Text className="text-center">
+            <p>
+              {" "}
+              "Senang rasanya jadi ngerti tentang diri sendiri. <br />
+              Bisa ngerjain sesuatu sesuai dengan <br />
+              potensi diri yang sebenernya"{" "}
+            </p>
+          </Text>
+        </div>
+        <div className="col-lg-12 col-md-12">
+          <Player>
+            <ReactPlayer
+              className="react-player"
+              url="https://www.youtube.com/watch?v=B9Wz-RwYr_Y"
+            />
+          </Player>
         </div>
         <div className="col-lg-12 col-md-12 text-center">
           <div className="card mt-5">
-            <p>
+            <h5>
               <strong>
                 "Ikuti test potensi model keberhasilan diri anda, dan dapatkan
                 deskripsi, <br />
@@ -67,14 +73,14 @@ function Heading() {
                 <br />
                 keberhasilan dan kekayaan, dengan efektif dan efisien."
               </strong>
-            </p>
-            <Link to="/welcome" className="btn-lg btn-round bg-purple">
-              Ikuti Test <i className="zmdi zmdi-hc-fw"></i>
+            </h5>
+            <Link to="/welcome">
+              <div className="button">Ikuti Test</div>
             </Link>
           </div>
         </div>
-      </Header>
-    </>
+      </div>
+    </Header>
   );
 }
 

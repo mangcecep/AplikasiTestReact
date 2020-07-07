@@ -11,30 +11,63 @@ const Header = styled.section`
   background-image: url("${group16Image.url}");
   background-size: 550px;
   background-repeat: repeat-x;
+
+  @font-face {
+    font-family: "Poppins Medium";
+    src: local("Poppins Medium"),
+      urL(../../assets/fonts/Poppins-Medium.ttf) format("truetype");
+  }
+  font-family: "Poppins Medium";
+  position: relative;
+  box-shadow: none;
+  .registerButton {
+    box-shadow: 1px 3px 5px grey;
+  }
+  
   img.pathCopy {
     height : auto;
-    width: 20%;
+    width: 90%;
   }
   img.helloPng {
     height : auto;
-    width: 700px;
+    width: 150%;
   }
   img.path {
     height : auto;
-    width: 15%;
+    width: 70%;
+    float: right;
   }
   p.title {
     font-size: 25px;
     text-align: center;
+  }
+
+  @media screen and (max-width: 420px) {
+    p.title {
+      font-size: 13px;
+    }
+    img.pathCopy {
+      height : auto;
+      width: 10%;
+    }
+    img.helloPng {
+      height : auto;
+      width: 100%;
+    }
+    img.path {
+      height : auto;
+      width: 10%;
+    }
   }
 `;
 
 function HeaderWelcome() {
   return (
     <Header className="container">
-      <p className="title">
+      <p className="title py-4">
         <strong>
-          "" <br />
+          <i className="zmdi zmdi-hc-2x"></i>
+          <br />
           Selamat mengikuti tes Shio Kaya <br />
           dan dapatkan deskripsi seru yang akurat tentang <br />
           karakteristik alamiah anda untuk kekayaan dan <br />
@@ -42,23 +75,29 @@ function HeaderWelcome() {
           yang biasa Anda lakukan
         </strong>
       </p>
-      <img
-        src={pathCopy16Image.url}
-        alt={pathCopy16Image.alt}
-        className="pathCopy"
-      />
-      <img
-        src={helloPngImage.url}
-        alt={helloPngImage.alt}
-        className="helloPng"
-      />
-      <img src={pathImage.url} alt={pathImage.alt} className="path" />
+      <div className="row clearfix">
+        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <img
+            src={pathCopy16Image.url}
+            alt={pathCopy16Image.alt}
+            className="pathCopy"
+          />
+        </div>
+        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <img
+            src={helloPngImage.url}
+            alt={helloPngImage.alt}
+            className="helloPng"
+          />
+        </div>
+        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <img src={pathImage.url} alt={pathImage.alt} className="path" />
+        </div>
+      </div>
       <div className="row clearfix">
         <div className="col-lg-12 col-md-12 col-sm-12">
           <div className="content mt-4">
-            <h4 className="title text-center mb-4">
-              SELAMAT DATANG DI SHIOKAYA
-            </h4>
+            <h4 className="text-center mb-4">SELAMAT DATANG DI SHIOKAYA</h4>
             <div className="text ml-5">
               <p>
                 Anda cukup mengaolokasikan waktu selama 5 menit, mengisi 12
