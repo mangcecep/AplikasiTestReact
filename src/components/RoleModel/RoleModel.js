@@ -5,7 +5,7 @@ function RoleModel() {
   let roleModelNumber = 7;
   for (let i = 0; i < roleModelNumber; i++) {
     roleModel.push(
-      <div className="col-lg-3 col-md-3 col-sm-3">
+      <div className="col-lg-3 col-md-3 col-sm-3" key={i}>
         <p>
           <strong>Achmad Hamdami</strong>
         </p>

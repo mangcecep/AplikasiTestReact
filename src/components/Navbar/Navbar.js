@@ -3,13 +3,12 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { logo, profile2Image } from "../images";
-import "../../assets/fonts/Poppins-Black.ttf";
 
 const NavHeader = styled.nav`
   @font-face {
     font-family: "Poppins Black";
     src: local("Poppins Black"),
-      urL(../../assets/fonts/Poppins-Black.ttf) format("truetype");
+      url(../../assets/fonts/Poppins-Black.ttf) format("truetype");
   }
   font-family: "Poppins Black";
   font-size: 12px;
@@ -53,7 +52,7 @@ const Navbar = (props) => {
             <ul className="navbar-nav mr-auto">
               {login.isLogin === true ? (
                 <Link to="/profile">
-                  <label className="mr-3">Rendy T</label>
+                  <p className="text-dark mr-3">Rendy T</p>
                   <img
                     src={profile2Image.url}
                     alt={profile2Image.url}

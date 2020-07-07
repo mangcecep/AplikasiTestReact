@@ -14,6 +14,12 @@ import {
 } from "../images";
 
 const Header = styled.section`
+  @font-face {
+    font-family: "Poppins Medium";
+    src: local("Poppins Medium"),
+      url(../../assets/fonts/Poppins-Medium.ttf) format("truetype");
+  }
+  font-family: "Poppins Medium";
   background-image: url("${group16Image.url}");
   background-size: 550px;
   background-repeat: repeat-x;
@@ -68,6 +74,45 @@ const Header = styled.section`
   p.content {
     font-size: 17px;
   }
+
+  @media screen and (max-width: 420px) {
+    h4 p.content {
+      font-size: 14px;
+    }
+    p.title {
+      margin-top: 25px;
+      font-size: 20px;
+      text-align: center;
+    }
+    img.charLayer{
+    position: relative;
+    height : auto;
+    width: 60%;
+    margin-left: 30px;
+    padding-left: 100px;
+    padding-top: 30px
+    margin-bottom: 40px;
+    }
+
+    .responsive {
+      position : relative;
+    }
+
+    img.charPriest {
+      margin-top:
+      position: absolute;
+      height : auto;
+      width: 60%;
+      margin-left: 20px;
+      padding-top: 20px;
+      padding-left: 80px;
+      padding-bottom: 30px;
+    }
+
+    img.PathcopyagainpngImage, img.PathKopiimage,  img.PathCopy2Image{
+      display: none;
+    }
+  }
 `;
 
 function HeaderTwelveQuestionResult() {
@@ -75,16 +120,16 @@ function HeaderTwelveQuestionResult() {
     <Header>
       <p className="title">
         <strong>
-          Selamat! di bawah ini adalah 3 kemungkinan terbesar <br />
-          dari total 8 profil Shio kaya Anda. 3 kecenderungan <br />
-          cara alamiah Anda, untuk bisa mencapai keberhasilan <br />
-          dengan waktu dan tenaga yang lebih efektif dan efisien
+          Selamat! di bawah ini adalah 3 kemungkinan terbesar dari total 8
+          profil Shio kaya Anda. 3 kecenderungan cara alamiah Anda, untuk bisa
+          mencapai keberhasilan dengan waktu dan tenaga yang lebih efektif dan
+          efisien
         </strong>
       </p>
       <section className="container">
         <div className="content">
           <div className="row clearfix">
-            <div className="col-lg-6 col-md-6 col-sm-6">
+            <div className="col-lg-6 col-md-12 col-sm-12 mb-2">
               <img
                 src={Group2copyingImage.url}
                 alt={Group2copyingImage.alt}
@@ -101,30 +146,27 @@ function HeaderTwelveQuestionResult() {
                 className="PathcopyagainpngImage"
               />
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-6 my-auto">
+            <div className="col-lg-6 col-md-12 col-sm-12 my-auto">
               <h4>
                 <strong>Merchant</strong>
               </h4>
               <p className="content">
-                Kekuatan fleksibilitas yang mampu untuk merasa <br />
-                nyaman dengan kondisi yang penuh degan interaksi <br />
-                sosial, juga menikmati kondisi sendirian atau <br />
-                yang jauh dar keramaian, untuk memperoleh <br />
-                semangat kembali
+                Kekuatan fleksibilitas yang mampu untuk merasa nyaman dengan
+                kondisi yang penuh degan interaksi sosial, juga menikmati
+                kondisi sendirian atau yang jauh dar keramaian, untuk memperoleh
               </p>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-6 my-auto">
+            <div className="col-lg-6 col-md-12 col-sm-12 my-auto responsive">
               <h4>
                 <strong>Priest</strong>
               </h4>
               <p className="content">
-                Menjalani instruksi dan prosedur secara baik, tidak <br />
-                terganggu oleh rutinitas, namun mampu untuk <br />
-                melihat celah dan kesempatan dalam meraih target/ <br />
-                tujuan dengan lebih cepat{" "}
+                Menjalani instruksi dan prosedur secara baik, tidak terganggu
+                oleh rutinitas, namun mampu untuk melihat celah dan kesempatan
+                dalam meraih target/ tujuan dengan lebih cepat{" "}
               </p>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-6">
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <img
                 src={Group3pngImage.url}
                 alt={Group3pngImage.alt}
@@ -141,7 +183,7 @@ function HeaderTwelveQuestionResult() {
                 className="PathKopiimage"
               />
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-6">
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <img
                 src={Group2CopyImage.url}
                 alt={Group2CopyImage.alt}
@@ -158,7 +200,7 @@ function HeaderTwelveQuestionResult() {
                 className="PathCopy2Image"
               />
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-6 my-auto">
+            <div className="col-lg-6 col-md-12 col-sm-12 my-auto">
               <h4>
                 <strong>Marshal</strong>
               </h4>

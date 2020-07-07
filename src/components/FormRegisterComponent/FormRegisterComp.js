@@ -7,9 +7,22 @@ const FormRegister = styled.section`
   background-image: url("${RectanglejpgImage.url}");
   margin-top: 30px;
   padding: 60px;
+  @font-face {
+    font-family: "Poppins Medium";
+    src: local("Poppins Medium"),
+      url(../../assets/fonts/Poppins-Medium.ttf) format("truetype");
+  }
+  font-family: "Poppins Medium";
   p, label {
     font-size : 20px;
     padding: auto;
+  }
+
+  @media screen and (max-width: 420px) {
+    p, label {
+      font-size : 15px;
+      padding: auto;
+    }
   }
 `;
 

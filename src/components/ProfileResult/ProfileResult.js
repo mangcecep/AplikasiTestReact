@@ -1,27 +1,51 @@
 import React from "react";
 import { BackgroundLayerCopy1Image } from "../images";
+import styled from "styled-components";
+
+const Row = styled.div`
+  .picture {
+    margin-top: 20px;
+    width: 50%;
+    height: auto;
+  }
+  p {
+    font-size: 17px;
+    display: inline;
+  }
+  @media screen and (max-width: 420px) {
+    .picture {
+      width: 25%;
+      height: auto;
+      display: inline-block;
+    }
+    p {
+      font-size: 12px;
+      display: inline;
+    }
+  }
+`;
 function ProfileResult() {
   return (
-    <div className="row clearfix">
-      <div className="col-md-12 col-sm-12">
+    <Row className="row clearfix">
+      <div className="col-lg-12 col-md-12 col-sm-12">
         <strong>Elemen Kisama(Tanah)</strong>
       </div>
-      <div className="col-md-6 col-sm-6 mt-4">
+      <div className="col-lg-6 col-md-6 col-sm-6">
         <img
           src={BackgroundLayerCopy1Image.url}
           alt={BackgroundLayerCopy1Image.alt}
-          width="70%"
-          height="auto"
+          className="picture"
         />
       </div>
-      <div className="col-md-6 col-sm-6">
-        <h5>Warna Green</h5>
-        <br />
-        <h5>PENCARI PELUANG</h5>
-        <h5>PEDAGANG ALAMI</h5>
-        <h5>PENGGUNA WAKTU EFISIEN</h5>
+      <div className="col-lg-6 col-md-6 col-sm-6 my-auto">
+        <p>
+          Warna Green <br />
+          PENCARI PELUANG <br />
+          PEDAGANG ALAMI <br />
+          PENGGUNA WAKTU EFISIEN
+        </p>
       </div>
-    </div>
+    </Row>
   );
 }
 
