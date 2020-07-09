@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 import Navbar from "../../components/Navbar";
 import HeaderProfile from "../../components/HeaderProfile";
@@ -16,9 +17,18 @@ import RoleModel from "../../components/RoleModel";
 import IndustryRoleModel from "../../components/IndustryRoleModel";
 import Elements from "../../components/Elements";
 
+const Prof = styled.div`
+  @font-face {
+    font-family: "Poppins Regular";
+    src: local("Poppins Regular"),
+      url(../../assets/fonts/Poppins-Regular.ttf) format("truetype");
+  }
+  font-family: "Poppins Regular";
+`;
+
 const Profile = () => {
   return (
-    <div className="container">
+    <Prof className="container">
       <Navbar loginProp={{ isLogin: true }} />
       <HeaderProfile />
       <YourProfile />
@@ -43,7 +53,7 @@ const Profile = () => {
       <IndustryRoleModel />
       <Elements />
       <Footer />
-    </div>
+    </Prof>
   );
 };
 
