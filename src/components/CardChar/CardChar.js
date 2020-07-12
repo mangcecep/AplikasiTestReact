@@ -7,6 +7,7 @@ const Card = styled.div`
   background-image: url("${RectangleCopy13jpgImage.url}");
   background-size: cover;
   background-repeat: no-repeat;
+  
 `;
 
 function CardChar(props) {

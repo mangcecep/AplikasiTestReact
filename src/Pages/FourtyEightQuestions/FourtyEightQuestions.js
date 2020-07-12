@@ -9,16 +9,9 @@ import {
   containerCarouselBackground,
   look10pngImage,
 } from "../../components/images";
-import Footer from "../../components/Footer";
 
-const FormQuest = styled.section`
-  img {
-    position: absolute;
-    z-index: -1;
-  }
-`;
-
-const FourtyEightQuestions = () => {
+const FourtyEightQuestions = (props) => {
+  const [isLogin, setIslogin] = React.useState({ isLogin: false });
   const [state, setState] = React.useState({ slideIndex: 0, updateCount: 0 });
   const settings = {
     arrows: true,
@@ -32,7 +25,6 @@ const FourtyEightQuestions = () => {
   };
   return (
     <div className="container">
-      <Navbar loginProp={{ isLogin: true }} />
       <section className="container">
         <div className="content">
           <div className="row clearfix">
@@ -87,7 +79,6 @@ const FourtyEightQuestions = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

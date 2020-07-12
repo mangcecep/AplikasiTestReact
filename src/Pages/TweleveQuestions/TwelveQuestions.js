@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "../../components/Navbar";
 import HeaderTwelveQuestion from "../../components/HeaderTwelveQuestion";
-import Footer from "../../components/Footer";
 import FormTwelve from "../../components/FormTwelve";
 
 const Questions = styled.div`
@@ -15,12 +13,12 @@ const Questions = styled.div`
 `;
 const TwelveQuestions = () => {
   return (
-    <Questions className="container">
-      <Navbar loginProp={{ isLogin: false }} />
-      <HeaderTwelveQuestion />
-      <FormTwelve />
-      <Footer />
-    </Questions>
+    <>
+      <Questions>
+        <HeaderTwelveQuestion />
+        <FormTwelve />
+      </Questions>
+    </>
   );
 };
 

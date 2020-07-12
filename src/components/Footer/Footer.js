@@ -13,10 +13,10 @@ function Footer() {
 }
 
 font-family: 'Poppins MediumItalic';
-font-size: 13px;
+font-size: 15px;
 
 @media screen and (max-width: 768px) {
-  font-size: 7px;
+  font-size: 10px;
 }
 `;
   return (
@@ -26,17 +26,13 @@ font-size: 13px;
           <h5>ShioKaya</h5>
           <p>
             Dalam deskripsi Shio Kaya ini, anda mempelajari apa yang sebenarnya{" "}
-            <br />
             mendorong, menginspirasi, dan tantangan dari karakteristik alamiah
-            Anda yang unik.
-            <br />
-            yang bisa membantu anda dalam membangun keberhasilan dengan lebih
-            efektif <br />
-            dan efisien, menghemat waktu dan tenaga anda.
+            Anda yang unik. yang bisa membantu anda dalam membangun keberhasilan
+            dengan lebih efektif dan efisien, menghemat waktu dan tenaga anda.
           </p>
         </div>
         <div className="col-lg-3 col-md-12 col-sm-12 my-auto mx-auto">
-          <div className="d-flex justify-content-start">
+          <div className="d-flex justify-content-start mb-2">
             <img
               src={instagramicon.url}
               alt={instagramicon.alt}
@@ -46,12 +42,12 @@ font-size: 13px;
             <span className="ml-2 my-auto"> @tentangshiokaya</span>
           </div>
 
-          <div className="d-flex justify-content-start">
+          <div className="d-flex justify-content-start mb-2">
             <img src={waIcon.url} alt={waIcon.alt} width="10%" height="auto" />
             <span className="ml-2 my-auto"> +62 877 0088 4964</span>
           </div>
 
-          <div className="d-flex justify-content-start">
+          <div className="d-flex justify-content-start mb-2">
             <img
               src={emailIcon.url}
               alt={emailIcon.alt}

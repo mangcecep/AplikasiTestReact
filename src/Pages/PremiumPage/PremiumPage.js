@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import styled from "styled-components";
 import { Look211pngImage } from "../../components/images";
 
@@ -28,8 +26,7 @@ const Premium = styled.div`
 
 const PremiumPage = () => {
   return (
-    <Premium className="container">
-      <Navbar loginProp={{ isLogin: true }} />
+    <Premium>
       <section className="container bg-white text-dark">
         <div className="header text-center">
           <h2>Halaman detail PREMIUM Anda</h2>
@@ -78,7 +75,6 @@ const PremiumPage = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </Premium>
   );
 };

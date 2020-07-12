@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import Navbar from "../../components/Navbar";
 import HeaderProfile from "../../components/HeaderProfile";
 import YourProfile from "../../components/YourProfile";
-import Footer from "../../components/Footer";
-import CharProfile from "../../components/CharProfile";
+import Characteristic from "../../components/Characteristic";
 import StrengthProfile from "../../components/StrengthProfile";
 import SelfLeadership from "../../components/SelfLeadership";
 import PrimaryProfile from "../../components/PrimaryProfile";
@@ -28,11 +26,10 @@ const Prof = styled.div`
 
 const Profile = () => {
   return (
-    <Prof className="container">
-      <Navbar loginProp={{ isLogin: true }} />
+    <Prof>
       <HeaderProfile />
       <YourProfile />
-      <CharProfile />
+      <Characteristic />
       <StrengthProfile />
       <SelfLeadership
         title="Self-leadership"
@@ -52,7 +49,6 @@ const Profile = () => {
       <RoleModel />
       <IndustryRoleModel />
       <Elements />
-      <Footer />
     </Prof>
   );
 };

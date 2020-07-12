@@ -2,13 +2,12 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from "react-router-dom";
 import TwelveQuest from "../TwelveQuest";
-import { look10pngImage } from "../images";
+import EndTwelveQuest from "../EndTwelveQuest";
 import styled from "styled-components";
 
 const Button = styled.div`
-  margin-top: -120px;
+  position: relative;
 `;
 
 class FormTwelve extends Component {
@@ -19,7 +18,6 @@ class FormTwelve extends Component {
     this.state = {
       slideIndex: 0,
       updateCount: 0,
-      showingResult: true,
     };
   }
   next() {
@@ -28,13 +26,6 @@ class FormTwelve extends Component {
   previous() {
     this.slider.slickPrev();
   }
-
-  componentDidMount() {
-    if (this.state.slideIndex === 12) {
-      this.setState(this.state.showingResult === false);
-    }
-  }
-
   render() {
     const settings = {
       arrows: false,
@@ -50,7 +41,7 @@ class FormTwelve extends Component {
       beforeChange: (current, next) => this.setState({ slideIndex: next }),
     };
     return (
-      <section className="container">
+      <section className="container pb-4">
         <form>
           <input
             onChange={(e) => this.slider.slickGoTo(e.target.value)}
@@ -130,7 +121,7 @@ class FormTwelve extends Component {
               choiceA="ini adalah opsi untuk pilihan jawaban pertama"
               choiceB="ini adalah opsi untuk pilihan jawaban kedua"
             />
-            <TwelveQuest
+            <EndTwelveQuest
               number="12."
               question="pertanyaan selanjutnya nomor 12 dan seterusnya"
               choiceA="ini adalah opsi untuk pilihan jawaban pertama"
@@ -159,32 +150,6 @@ class FormTwelve extends Component {
               </div>
             </div>
           </Button>
-          <div className="row clearfix">
-            <div className="col-lg-12 col-md-12 col-sm-12">
-              <div className={this.state.showingResult ? "fade" : "showing"}>
-                <div className="container">
-                  <div className="content">
-                    <div className="row clearfix">
-                      <div className="col-lg-6 col-md-12 col-sm-12">
-                        <img
-                          src={look10pngImage.url}
-                          alt={look10pngImage.alt}
-                        />
-                      </div>
-                      <div className="col-lg-6 col-md-12 col-sm-12 my-auto mx-auto">
-                        <Link
-                          className="btn btn-lg btn-round bg-purple"
-                          to="twelve-questions-result"
-                        >
-                          lihat hasilnya
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </form>
       </section>
     );
