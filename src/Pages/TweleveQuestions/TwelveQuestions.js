@@ -13,12 +13,10 @@ const Questions = styled.div`
 `;
 const TwelveQuestions = () => {
   return (
-    <>
-      <Questions>
-        <HeaderTwelveQuestion />
-        <FormTwelve />
-      </Questions>
-    </>
+    <Questions>
+      <HeaderTwelveQuestion />
+      <FormTwelve />
+    </Questions>
   );
 };
 

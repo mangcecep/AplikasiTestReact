@@ -31,3 +31,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     9. profile                          : http://localhost:3000/profile
     10.Chart Sample                     : http://localhost:3000/chart-sample
     11.Slider Example                   : http://localhost:3000/slider-example
+
+## Progress
+
+    1. mobile : Done -- web: --done

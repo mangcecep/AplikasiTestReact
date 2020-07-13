@@ -76,6 +76,7 @@ const Header = styled.section`
   }
 
   @media screen and (max-width: 420px) {
+    background-image: none;
     h4 p.content {
       font-size: 14px;
     }
@@ -94,19 +95,30 @@ const Header = styled.section`
     margin-bottom: 40px;
     }
 
-    .responsive {
-      position : relative;
-    }
-
     img.charPriest {
-      margin-top:
+      margin-top: -480px;
       position: absolute;
       height : auto;
-      width: 60%;
-      margin-left: 20px;
+      width: 50%;
+      margin-left: 30px;
       padding-top: 20px;
       padding-left: 80px;
       padding-bottom: 30px;
+    }
+
+    img.Group2copyingImage2 {
+      margin-top: -520px;
+      position: absolute;
+      height : auto;
+      width: 80%;
+      margin-left: 40px;
+      padding-top: 20px;
+      padding-left: 0px;
+    }
+
+    h4.priest {
+      margin-top: 280px;
+      position: relative;
     }
 
     img.PathcopyagainpngImage, img.PathKopiimage,  img.PathCopy2Image{
@@ -157,7 +169,7 @@ function HeaderTwelveQuestionResult() {
               </p>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 my-auto responsive">
-              <h4>
+              <h4 className="priest">
                 <strong>Priest</strong>
               </h4>
               <p className="content">
@@ -170,7 +182,7 @@ function HeaderTwelveQuestionResult() {
               <img
                 src={Group3pngImage.url}
                 alt={Group3pngImage.alt}
-                className="Group2copyingImage"
+                className="Group2copyingImage Group2copyingImage2"
               />
               <img
                 src={priestImage.url}
@@ -205,10 +217,9 @@ function HeaderTwelveQuestionResult() {
                 <strong>Marshal</strong>
               </h4>
               <p className="content">
-                Mengutamakan hal yang dianggap prioritas <br />
-                cenderung terstruktur dalam perencanaan maupun <br />
-                implementasinya, menjadi mesin pendorong untuk <br />
-                sistem yang dibangun atau dijalanjan.
+                Mengutamakan hal yang dianggap prioritas cenderung terstruktur
+                dalam perencanaan maupun implementasinya, menjadi mesin
+                pendorong untuk sistem yang dibangun atau dijalanjan.
               </p>
             </div>
           </div>

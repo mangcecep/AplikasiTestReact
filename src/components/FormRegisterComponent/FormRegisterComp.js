@@ -20,8 +20,14 @@ const FormRegister = styled.section`
 
   @media screen and (max-width: 420px) {
     p, label {
-      font-size : 15px;
+      margin-left: -30px;
+      margin-right: -30px;
+      font-size : 11px;
       padding: auto;
+    }
+    input {
+      margin-left: -30px;
+      width: 130%;
     }
   }
 `;
@@ -34,19 +40,17 @@ function FormRegisterComp() {
           <div className="content">
             <p className="title">
               <strong>
-                Anda membutuhkan profil yang lebih sepesifik? <br />
-                Hanya 1 profil yang benar-benar detail dan akurat?{" "}
+                Anda membutuhkan profil yang lebih sepesifik? Hanya 1 profil
+                yang benar-benar detail dan akurat?{" "}
               </strong>
             </p>
             <p>
-              Kami bisa menyediakan untuk Anda. secara GRATIS. <br />
-              Anda cukup terlebih dahulu melengkapi beberapa <br />
-              infomasi disamping.
+              Kami bisa menyediakan untuk Anda. secara GRATIS. Anda cukup
+              terlebih dahulu melengkapi beberapa infomasi disamping.
             </p>
             <p>
-              Anda juga cukup memberikan 10 menit tambahan <br />
-              dari waktu Anda, untuk mengisi tambahan <br />
-              pertanyaan, dan memperoleh hasil yang lebih <br />
+              Anda juga cukup memberikan 10 menit tambahan dari waktu Anda,
+              untuk mengisi tambahan pertanyaan, dan memperoleh hasil yang lebih
               detail dan akurat
             </p>
           </div>
@@ -67,6 +71,9 @@ function FormRegisterComp() {
                 <input type="text" className="form-control bg-white" />
               </div>
             </div>
+            <button className="btn btn-round bg-purple btn-lg">
+              Mulai Test Detail
+            </button>
           </form>
         </div>
       </div>
