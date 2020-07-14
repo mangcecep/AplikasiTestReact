@@ -13,11 +13,11 @@ const BgWrapper = styled.section`
     margin-top: -108px;
     padding-top: 200px;
     img.char {
-      margin-top: 20px;
-      margin-left: 140px;
+      margin-top: 30px;
+      margin-left: 190px;
       background-color: white;
-      padding : 20px 20px 20px 20px;
-      height: 40rem;
+      padding : 100px 55px 80px 60px;
+      height: 35rem;
       width: auto;
       box-shadow: 10px 10px 5px grey;
     }
@@ -55,7 +55,7 @@ function HeaderProfile() {
             <strong>PRIEST (The Defender)</strong>
           </h3>
           <ProfileResult />
-          <p>
+          <p className="mt-4">
             <strong>Kareakter Umum</strong>
           </p>
           <p>

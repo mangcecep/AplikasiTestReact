@@ -54,6 +54,12 @@ import BackgroundLayerCopycopy1png from "../../GlobalAsset/Background Layer Copy
 import RectangleCopy13jpg from "../../GlobalAsset/Rectangle Copy 13.jpg";
 import RectangleCopy73jpg from "../../GlobalAsset/Rectangle Copy 73.jpg";
 import Group3jpg from "../../GlobalAsset/Group 3.jpg";
+import Happy06png from "../../GlobalAsset/Happy-06.png";
+
+export const Happy06pngImage = {
+  url: Happy06png,
+  alt: "Happy 06 png image",
+};
 
 export const Group3jpgImage = {
   url: Group3jpg,

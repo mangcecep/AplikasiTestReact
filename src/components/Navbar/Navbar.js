@@ -66,7 +66,7 @@ const Navbar = (props) => {
                   <li className="nav-item">
                     <Link
                       to="/login"
-                      className="px-4 py-2 bg-none nav-link text-dark"
+                      className="px-4 py-2bg-none nav-link text-dark"
                     >
                       <strong>Masuk</strong>
                     </Link>
@@ -74,7 +74,7 @@ const Navbar = (props) => {
                   <li className="nav-item">
                     <Link
                       to="#"
-                      className="registerButton btn btn-round bg-purple px-4 py-2 nav-link"
+                      className="registerButton btn btn-round bg-purple mr-4 px-4 py-2 nav-link"
                     >
                       Daftar
                     </Link>

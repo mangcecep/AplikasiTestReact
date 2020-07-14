@@ -37,12 +37,18 @@ const Header = styled.section`
     width: 70%;
     float: right;
   }
+  .text {
+    font-size: 15px;
+  }
   p.title {
     font-size: 25px;
     text-align: center;
   }
 
   @media screen and (max-width: 420px) {
+    h4 {
+      font-size: 14px;
+    }
     p.title {
       font-size: 13px;
     }
@@ -98,26 +104,21 @@ function HeaderWelcome() {
         <div className="col-lg-12 col-md-12 col-sm-12">
           <div className="content mt-4">
             <h4 className="text-center mb-4">SELAMAT DATANG DI SHIOKAYA</h4>
-            <div className="text ml-5">
+            <div className="text">
               <p>
                 Anda cukup mengaolokasikan waktu selama 5 menit, mengisi 12
-                pertanyaan singkat Shiokaya, untuk bisa <br />
-                memperoleh gambaran umum tentang potensi model keberhasilan diri
-                anda.
+                pertanyaan singkat Shiokaya, untuk bisa memperoleh gambaran umum
+                tentang potensi model keberhasilan diri anda.
               </p>
-              <br />
               <p>
-                Shiokaya merupakan aat ukur untuk potensi model keberhasilan,
-                yaitu cuplikan informasi tentang <br />
-                bagaimana Anda bisa menggunakan potensi yang selama ini ada
-                dalam diri Anda untuk bisa <br />
-                mencapai keberhasilan lebih cepat dan akurat.
+                Shiokaya merupakan alat ukur untuk potensi model keberhasilan,
+                yaitu cuplikan informasi tentang bagaimana Anda bisa menggunakan
+                potensi yang selama ini ada dalam diri Anda untuk bisa mencapai
+                keberhasilan lebih cepat dan akurat.
               </p>
-              <br />
               <p>
                 5 hal apa yang bisa Anda lakukan setalah mendapatkan gambaran
-                umum Anda melalui Shiokaya
-                <br /> ini:
+                umum Anda melalui Shiokaya ini:
               </p>
             </div>
           </div>

@@ -29,9 +29,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     7. Fourty Eight Result Questions    : http://localhost:3000/fourty-eight-result
     8. Premium Page                     : http://localhost:3000/premium-page
     9. profile                          : http://localhost:3000/profile
+
     10.Chart Sample                     : http://localhost:3000/chart-sample
     11.Slider Example                   : http://localhost:3000/slider-example
 
 ## Progress
 
-    1. mobile : Done -- web: --done
+    1. Home                             --> mobile : --done; web: --done
+    2. Login                            --> mobile : --done; web: --done
+    3. Welcome                          --> mobile : --done; web: --done
+    4. Twelve Questions                 --> mobile : --****; web: --****
+    5. TwelveQuestions Result           --> mobile : --done; web: --done
+    6. Fourty Eight Questions           --> mobile : --****; web: --****
+    7. Fourty Eight Result Questions    --> mobile : --done; web: --done
+    8. Premium Page                     --> mobile : --done; web: --done
+    9. Profile Page                     --> mobile : --done; web: --done

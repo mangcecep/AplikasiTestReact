@@ -14,13 +14,15 @@ const Row = styled.div`
   }
   @media screen and (max-width: 420px) {
     .picture {
-      position: relative;
-      width: 40%;
+      margin-left: -20px;
+      position: absolute;
+      width: 30%;
       height: auto;
     }
-    p {
-      font-size: 12px;
-      display: float;
+    .text {
+      margin-top: 10px;
+      margin-left: 100px;
+      font-size: 7px;
     }
   }
 `;
@@ -33,20 +35,23 @@ function ProfileResult() {
         </div>
       </div>
       <div className="row clearfix">
-        <div className="col-md-6 col-sm-6">
+        <div className="col-md-6 col-sm-6 col-xs-6">
           <img
             src={BackgroundLayerCopy1Image.url}
             alt={BackgroundLayerCopy1Image.alt}
             className="picture"
           />
         </div>
-        <div className="col-md-6 col-sm-6">
-          <p>
-            Warna Green <br />
-            PENCARI PELUANG <br />
-            PEDAGANG ALAMI <br />
-            PENGGUNA WAKTU EFISIEN
-          </p>
+        <div className="col-md-6 col-sm-6 col-xs-6">
+          <div className="text">
+            <p>Warna Green </p>
+            <br />
+            <p>PENCARI PELUANG </p>
+            <br />
+            <p>PEDAGANG ALAMI </p>
+            <br />
+            <p>PENGGUNA WAKTU EFISIEN</p>
+          </div>
         </div>
       </div>
     </Row>

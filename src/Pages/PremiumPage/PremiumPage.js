@@ -9,7 +9,13 @@ const Premium = styled.div`
       url(../../assets/fonts/Poppins-Regular.ttf) format("truetype");
   }
   font-family: "Poppins Regular";
+  .point {
+    margin-top: 140px;
+  }
   @media screen and (max-width: 420px) {
+    .point {
+      margin-top: -30px;
+    }
     .pict {
       display: none;
     }
@@ -41,7 +47,7 @@ const PremiumPage = () => {
           <div className="col-lg-9 col-md-9 col-sm-9 my-auto">
             <h2 className="text-dark">Apa saja yang akan Saya Peroleh?</h2>
             <br />
-            <h5 className="alert alert-danger">
+            <h5 className="point alert alert-danger">
               Anda akan memperoleh hasil laporan detail tentang diri Anda
             </h5>
           </div>

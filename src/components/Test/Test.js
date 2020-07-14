@@ -1,56 +1,62 @@
 import React from "react";
-
+import PoppinsMedium from "../../assets/fonts/Poppins-Medium.ttf";
 import { greenBackgroundImage, buttonImage } from "../images";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-const Content = styled.div`
-  .background {
-    position: relative;
-    margin-left: -160px;
-    z-index: -1;
-  }
-  h4 {
-    position: realtive;
-    margin-top: -230px;
-    margin-bottom: 140px;
-  }
-  p {
-    margin-top: -129px;
+const Content = styled.section`
+background-image: url("${greenBackgroundImage.url}");
+background-size: 130% 170%;
+background-position: top;
+background-repeat: no-repeat;
+padding-bottom: 20px;
+@font-face {
+  font-family: "Poppins MediumItalic";
+  src: local("${PoppinsMedium}"),
+  url("${PoppinsMedium}") format("truetype");
+}
+font-family: 'Poppins MediumItalic';
+.title {
+    padding-top: 20px;
+    font-size: 25px;
     margin-right: 25px;
-    margin-bottom: 100px;
-    color: white;
+}
+.button {
+  background-image: url("${buttonImage.url}");
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px 70px 5px 20px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 420px) {
+  background-size: 120% 180%;
+  .title {
+    font-size: 13px;
   }
   .button {
-    margin-top: -200px;
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px 45px 5px 10px;
+    font-size: 12px;
   }
+}
 `;
 
 function Test() {
   return (
-    <section className="container mt-4 mb-0">
-      <div className="row clearfix">
-        <div className="col-lg-12 col-md-12 col-ms-12">
-          <Content className="content align-center">
-            <img
-              src={greenBackgroundImage.url}
-              alt={greenBackgroundImage.alt}
-              className="background"
-            />
-            <h4>
+    <section className="container">
+      <div className="row clearfix align-center">
+        <div className="col-lg-12 col-md-12 col-sm-12">
+          <Content>
+            <p className="title">
               Lorem ipsum dolor sit amet consectetur <br />
               adipiscing elit
-            </h4>
-            <Link to="/welcome">
-              <img
-                src={buttonImage.url}
-                alt={buttonImage.alt}
-                width="150px"
-                height="auto"
-                className="button"
-              />
-              <p>Ikuti Test</p>
-            </Link>
+            </p>
+            <button className="button bg-purple btn-round btn-lg">
+              Ikuti Test
+            </button>
           </Content>
         </div>
       </div>

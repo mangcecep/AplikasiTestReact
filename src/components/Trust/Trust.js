@@ -1,11 +1,27 @@
 import React from "react";
+import styled from "styled-components";
 import { trustImageOne, trustImageTwo, trustImageThree } from "../images";
+import PoppinsMedium from "../../assets/fonts/Poppins-Medium.ttf";
+
+const Trusted = styled.section`
+@font-face {
+  font-family: "Poppins MediumItalic";
+  src: local("${PoppinsMedium}"),
+    url("${PoppinsMedium}") format("truetype");
+}
+font-family: 'Poppins MediumItalic';
+h4 {
+  font-size: 20px;
+}
+`;
 
 function Trust() {
   return (
-    <section className="container">
+    <Trusted className="container">
       <div className="content">
-        <h4 className="text-center">Mengapa mempercayai kami?</h4>
+        <h4 className="text-center">
+          <strong>Mengapa mempercayai kami?</strong>
+        </h4>
         <div className="row clearfix mt-5 justify-content-center">
           <div className="col-lg-4 col-md-col-sm-12">
             <img
@@ -69,7 +85,7 @@ function Trust() {
           </div>
         </div>
       </div>
-    </section>
+    </Trusted>
   );
 }
 

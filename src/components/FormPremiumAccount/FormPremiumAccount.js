@@ -16,6 +16,15 @@ const FormRegister = styled.section`
     font-size : 14px;
     padding: auto;
   }
+
+  @media screen and (max-width: 420px) {
+    p, ol,li,label, input {
+      margin-left: -30px;
+      margin-right: -20px;
+      font-size : 12px;
+      width: 300px;
+    }
+  }
 `;
 
 function FormPremiumAccount() {

@@ -17,6 +17,7 @@ const Number = styled.section`
   img.imageNumber {
     width: 60%;
     height: auto;
+    margin: auto;
   }
   p {
     font-size: 15px;
@@ -36,7 +37,7 @@ const Number = styled.section`
       background-image: url("${group9Image.url}");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 25%;
+      background-size: 50%;
       font-size: 7px;
     }
   }

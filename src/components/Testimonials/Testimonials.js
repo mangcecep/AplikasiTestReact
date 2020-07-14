@@ -1,4 +1,7 @@
 import React from "react";
+import styled from "styled-components";
+import PoppinsMedium from "../../assets/fonts/Poppins-Medium.ttf";
+
 import {
   backgroundTestimonial,
   loginWrapper,
@@ -8,10 +11,26 @@ import {
 } from "../images";
 import ProfileTestimonial from "../ProfileTestimonial";
 
+const Comment = styled.section`
+@font-face {
+  font-family: "Poppins MediumItalic";
+  src: local("${PoppinsMedium}"),
+    url("${PoppinsMedium}") format("truetype");
+}
+font-family: 'Poppins MediumItalic';
+@media screen and (max-width: 420px) {
+  .pictOne {
+    display: none;
+  }
+}
+`;
+
 function Testimonials() {
   return (
-    <section className="container">
-      <h3>Testimonial</h3>
+    <Comment className="container">
+      <p>
+        <strong>Testimonial</strong>
+      </p>
       <div className="row clearfix">
         <div className="col-lg-5 col-md-12 col-sm 12">
           <img
@@ -20,6 +39,7 @@ function Testimonials() {
             width="250px"
             height="auto"
             style={{ marginLeft: "345px", marginTop: "-45px" }}
+            className="pictOne"
           />
           <br />
           <img
@@ -27,6 +47,7 @@ function Testimonials() {
             alt={backgroundTestimonial.alt}
             width="auto"
             height="300px"
+            className="pictOne"
           />
         </div>
 
@@ -46,7 +67,7 @@ function Testimonials() {
           />
         </div>
       </div>
-    </section>
+    </Comment>
   );
 }
 
