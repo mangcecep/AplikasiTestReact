@@ -9,18 +9,28 @@ const FormQuestion = styled.section`
   background-size: 100% 100%;
   p.questions {
     font-size: 25px;
-    margin-top: 70px;
   }
   margin-top: 50px;
-  padding: auto;
-  margin-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   img {
     position: absolute;
     z-index: -1;
   }
-  p.labelCheckbox {
-    font-size: 25px;
-  }
+    font-size: 19px;
+    .radiobtn {
+      position: relative;
+      display: block;
+    }
+`;
+
+const Input = styled.input`
+  font-size: 22px;
+  margin-right: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 function TwelveQuest(props) {
@@ -35,29 +45,26 @@ function TwelveQuest(props) {
           <p className="questions">{question}</p>
         </div>
         <div className="col-lg-1 col-md-1 col-sm-1"></div>
-        <div className="col-lg-1 col-md-1 col-sm-1">
-          <div className="form-group ml-4 pl-5">
-            <input id={`${choiceA}`} type="checkbox" className="form-control" />
+        <div className="col-lg-11 col-md-11 col-sm-11">
+          <div className="form-group ml-5 pl-2 pt-2 pb-2 bg-white text-dark">
+            <div className="radiobtn">
+              <Input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                checked
+              />
+              <label htmlFor="male">{choiceA}</label>
+            </div>
           </div>
-        </div>
-        <div className="col-lg-10 col-md-10 col-sm-10">
-          <div className="checkbox bg-white text-dark pt-2 pl-4 pb-1">
-            <label htmlFor={`${choiceA}`}>
-              <p className="labelCheckbox">{choiceA}</p>
-            </label>
-          </div>
-        </div>
-        <div className="col-lg-1 col-md-1 col-sm-1"></div>
-        <div className="col-lg-1 col-md-1 col-sm-1">
-          <div className="form-group ml-4 pl-5">
-            <input id={`${choiceB}`} type="checkbox" className="form-control" />
-          </div>
-        </div>
-        <div className="col-lg-10 col-md-10 col-sm-10">
-          <div className="checkbox bg-white text-dark pt-2 pl-4 pb-1">
-            <label htmlFor={`${choiceB}`}>
-              <p className="labelCheckbox">{choiceB}</p>
-            </label>
+          <div className="form-group ml-5 pl-2 pt-2 pb-2 bg-white text-dark">
+            <div className="radiobtn">
+              <Input type="radio" name="gender" value="female" id="female" />
+              <span>
+                <label htmlFor="female">{choiceB}</label>
+              </span>
+            </div>
           </div>
         </div>
       </div>

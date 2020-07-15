@@ -55,6 +55,18 @@ import RectangleCopy13jpg from "../../GlobalAsset/Rectangle Copy 13.jpg";
 import RectangleCopy73jpg from "../../GlobalAsset/Rectangle Copy 73.jpg";
 import Group3jpg from "../../GlobalAsset/Group 3.jpg";
 import Happy06png from "../../GlobalAsset/Happy-06.png";
+import prev from "../../GlobalAsset/prev.png";
+import next from "../../GlobalAsset/next.png";
+
+export const prevImage = {
+  url: prev,
+  alt: "prev image button",
+};
+
+export const nextImage = {
+  url: next,
+  alt: "next image button",
+};
 
 export const Happy06pngImage = {
   url: Happy06png,

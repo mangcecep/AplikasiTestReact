@@ -3,11 +3,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TwelveQuest from "../TwelveQuest";
-import EndTwelveQuest from "../EndTwelveQuest";
 import styled from "styled-components";
+import { look10pngImage, prevImage, nextImage } from "../images";
+import { Link } from "react-router-dom";
 
 const Button = styled.div`
   position: relative;
+  p:hover {
+    cursor: pointer;
+  }
 `;
 
 class FormTwelve extends Component {
@@ -28,7 +32,7 @@ class FormTwelve extends Component {
   }
   render() {
     const settings = {
-      arrows: false,
+      arrows: true,
       dots: false,
       fade: true,
       infinite: false,
@@ -36,121 +40,193 @@ class FormTwelve extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
+      adaptiveHeight: true,
       afterChange: () =>
         this.setState((state) => ({ updateCount: state.updateCount + 1 })),
       beforeChange: (current, next) => this.setState({ slideIndex: next }),
     };
     return (
-      <section className="container pb-4">
-        <form>
+      <section className="container mx-center mt-5 pt-5">
+        <div className="content-lg">
           <input
             onChange={(e) => this.slider.slickGoTo(e.target.value)}
             value={this.state.slideIndex}
-            className="form-control"
+            className="form-control bg-aqua"
             type="range"
             min={0}
             max={11}
           />
-          <Slider {...settings} ref={(c) => (this.slider = c)}>
-            <TwelveQuest
-              number="1."
-              question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
-                  sering"
-              choiceA="lakukan dulu, kalau ada masalah diselesaikan sambil
-        jalan, supaya cepat"
-              choiceB=" Direncanakan baik-baik dule perlahan-lahan, daripada
-        nanti harus memperbaiki banyak hal"
-            />
-            <TwelveQuest
-              number="2."
-              question="pertanyaan selanjutnya nomor 2 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <TwelveQuest
-              number="3."
-              question="pertanyaan selanjutnya nomor 3 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <TwelveQuest
-              number="4."
-              question="pertanyaan selanjutnya nomor 4 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <TwelveQuest
-              number="5."
-              question="pertanyaan selanjutnya nomor 5 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <TwelveQuest
-              number="6."
-              question="pertanyaan selanjutnya nomor 6 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <TwelveQuest
-              number="7."
-              question="pertanyaan selanjutnya nomor 7 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <TwelveQuest
-              number="8."
-              question="pertanyaan selanjutnya nomor 8 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <TwelveQuest
-              number="9."
-              question="pertanyaan selanjutnya nomor 9 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <TwelveQuest
-              number="10."
-              question="pertanyaan selanjutnya nomor 10 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <TwelveQuest
-              number="11."
-              question="pertanyaan selanjutnya nomor 11 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-            <EndTwelveQuest
-              number="12."
-              question="pertanyaan selanjutnya nomor 12 dan seterusnya"
-              choiceA="ini adalah opsi untuk pilihan jawaban pertama"
-              choiceB="ini adalah opsi untuk pilihan jawaban kedua"
-            />
-          </Slider>
-          <Button>
-            <div className="row clearfix">
-              <div className="col-lg-6 col-md-6 col-sm-6">
-                <button
-                  className="btn btn-lg btn-rounded bg-purple"
-                  onClick={this.previous}
-                  type="button"
-                >
-                  Previous
-                </button>
+          <form>
+            <Slider {...settings} ref={(c) => (this.slider = c)}>
+              <div className="card">
+                <TwelveQuest
+                  number="1."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="Lakukan dulu, kalau ada masalah diselesaikan sambil
+            jalan, supaya cepat"
+                  choiceB=" Direncanakan baik-baik dule perlahan-lahan, daripada
+            nanti harus memperbaiki banyak hal"
+                />
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-6">
-                <button
-                  className="btn btn-lg btn-rounded bg-purple float-right"
-                  onClick={this.next}
-                  type="button"
-                >
-                  Next
-                </button>
+              <div className="card">
+                <TwelveQuest
+                  number="2."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 2"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 2"
+                />
               </div>
-            </div>
-          </Button>
-        </form>
+              <div className="card">
+                <TwelveQuest
+                  number="3."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 3"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 3"
+                />
+              </div>
+              <div className="card">
+                <TwelveQuest
+                  number="4."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 4"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 4"
+                />
+              </div>
+              <div className="card">
+                <TwelveQuest
+                  number="5."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 5"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 5"
+                />
+              </div>
+              <div className="card">
+                <TwelveQuest
+                  number="6."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 6"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 6"
+                />
+              </div>
+              <div className="card">
+                <TwelveQuest
+                  number="7."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 7"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 7"
+                />
+              </div>
+              <div className="card">
+                <TwelveQuest
+                  number="8."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 8"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 8"
+                />
+              </div>
+              <div className="card">
+                <TwelveQuest
+                  number="9."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 9"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 9"
+                />
+              </div>
+              <div className="card">
+                <TwelveQuest
+                  number="10."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 10"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 10"
+                />
+              </div>
+              <div className="card">
+                <TwelveQuest
+                  number="11."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 11"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 11"
+                />
+              </div>
+              <div className="card">
+                <TwelveQuest
+                  number="12."
+                  question="Dalam mengerjakan sesuatu, Anda merupakan seseorang yang lebih
+            sering"
+                  choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 12"
+                  choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 12"
+                />
+                <div className="content">
+                  <div className="row clearfix mx-auto">
+                    <div className="col-lg-6 col-md-6 col-sm-6">
+                      <img
+                        src={look10pngImage.url}
+                        alt={look10pngImage.alt}
+                        width="70%"
+                        height="auto"
+                        style={{
+                          position: "relative",
+                          marginBottom: "200px",
+                          zIndex: "12",
+                          margin: "center",
+                        }}
+                      />
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6 mx-auto my-auto">
+                      <Link
+                        className="btn btn-lg btn-round bg-purple"
+                        to="/twelve-questions-result"
+                      >
+                        lihat hasilnya
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Slider>
+            <Button>
+              <div className="row clearfix">
+                <div className="col-lg-6 col-md-6 col-sm-6">
+                  <p className="prev" onClick={this.previous}>
+                    <span className="mr-2">
+                      <img
+                        src={prevImage.url}
+                        alt={prevImage.alt}
+                        width="10%"
+                        height="auto"
+                      />
+                    </span>
+                    <strong>Kembali</strong>
+                  </p>
+                </div>
+                <div className="col-lg-6 col-md-6 col-sm-6">
+                  <p className="align-right" onClick={this.next}>
+                    <strong>Selanjutnya</strong>
+                    <span className="ml-2">
+                      <img
+                        src={nextImage.url}
+                        alt={nextImage.alt}
+                        width="10%"
+                        height="auto"
+                      />
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </Button>
+          </form>
+        </div>
       </section>
     );
   }
