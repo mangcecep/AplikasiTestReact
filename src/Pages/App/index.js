@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Routes from "./Routes";
 import Loader from "../../components/Loader";
-import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 const App = () => {
@@ -11,7 +10,6 @@ const App = () => {
       <div className="container">
         <Loader />
         <Router>
-          <Navbar loginProp={{ isLogin: false }} />
           <Route path="/list">
             <div>
               <ol>

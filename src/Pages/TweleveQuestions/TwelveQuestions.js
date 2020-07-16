@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Navbar from "../../components/Navbar";
 import HeaderTwelveQuestion from "../../components/HeaderTwelveQuestion";
 import FormTwelve from "../../components/FormTwelve";
 
@@ -14,6 +15,7 @@ const Questions = styled.div`
 const TwelveQuestions = () => {
   return (
     <Questions>
+      <Navbar loginProp={{ isLogin: false }} />
       <HeaderTwelveQuestion />
       <FormTwelve />
     </Questions>

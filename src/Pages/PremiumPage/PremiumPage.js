@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Navbar from "../../components/Navbar";
 import { Look211pngImage } from "../../components/images";
 
 const Premium = styled.div`
@@ -33,6 +34,7 @@ const Premium = styled.div`
 const PremiumPage = () => {
   return (
     <Premium>
+      <Navbar loginProp={{ isLogin: true }} />
       <section className="container bg-white text-dark">
         <div className="header text-center">
           <h2>Halaman detail PREMIUM Anda</h2>

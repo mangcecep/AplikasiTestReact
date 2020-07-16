@@ -1,6 +1,7 @@
 import React from "react";
 import { group16Image } from "../../components/images";
 import styled from "styled-components";
+import Navbar from "../../components/Navbar";
 import ContentResult from "../../components/ContentResult";
 import FormPremiumAccount from "../../components/FormPremiumAccount";
 
@@ -30,6 +31,7 @@ const Header = styled.section`
 const FourtyEightResult = () => {
   return (
     <>
+      <Navbar loginProp={{ isLogin: true }} />
       <Header>
         <h3 className="title">
           <strong>Profil akurat potensi model keberhasilan Anda adalah</strong>

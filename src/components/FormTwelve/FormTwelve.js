@@ -51,7 +51,7 @@ class FormTwelve extends Component {
           <input
             onChange={(e) => this.slider.slickGoTo(e.target.value)}
             value={this.state.slideIndex}
-            className="form-control bg-aqua"
+            className="form-control"
             type="range"
             min={0}
             max={11}

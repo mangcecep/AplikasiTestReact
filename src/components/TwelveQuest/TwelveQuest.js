@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { containerCarouselBackground } from "../images";
+import { containerCarouselBackground } from "../../components/images";
 
 const FormQuestion = styled.section`
   background-image: url("${containerCarouselBackground.url}");

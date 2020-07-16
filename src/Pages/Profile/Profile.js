@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import Navbar from "../../components/Navbar";
 import HeaderProfile from "../../components/HeaderProfile";
 import YourProfile from "../../components/YourProfile";
 import Characteristic from "../../components/Characteristic";
@@ -27,6 +28,7 @@ const Prof = styled.div`
 const Profile = () => {
   return (
     <Prof>
+      <Navbar loginProp={{ isLogin: true }} />
       <HeaderProfile />
       <YourProfile />
       <Characteristic />
