@@ -40,7 +40,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     3. Welcome                          --> mobile : --done; web: --done
     4. Twelve Questions                 --> mobile : --****; web: --done
     5. TwelveQuestions Result           --> mobile : --done; web: --done
-    6. Fourty Eight Questions           --> mobile : --****; web: --done
+    6. Fourty Eight Questions           --> mobile : --done; web: --done
     7. Fourty Eight Result Questions    --> mobile : --done; web: --done
     8. Premium Page                     --> mobile : --done; web: --done
     9. Profile Page                     --> mobile : --done; web: --done

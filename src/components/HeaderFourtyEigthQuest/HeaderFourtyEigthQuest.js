@@ -9,6 +9,10 @@ const Header = styled.section`
   }
   font-family: "Poppins Regular";
   font-size: 25px;
+
+  @media screen and (max-width: 420px) {
+    font-size: 14px;
+  }
 `;
 
 function HeaderFourtyEigthQuest() {
