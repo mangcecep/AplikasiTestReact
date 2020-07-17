@@ -12,6 +12,12 @@ const Button = styled.div`
   p:hover {
     cursor: pointer;
   }
+  @media screen and (max-width: 420px) {
+    p.align-right {
+      margin-top: -40px;
+      size: cover;
+    }
+  }
 `;
 
 class FormTwelve extends Component {
@@ -34,7 +40,7 @@ class FormTwelve extends Component {
     const settings = {
       arrows: true,
       dots: false,
-      fade: true,
+      fade: false,
       infinite: false,
       speed: 500,
       slidesToShow: 1,
@@ -67,6 +73,7 @@ class FormTwelve extends Component {
             jalan, supaya cepat"
                   choiceB=" Direncanakan baik-baik dule perlahan-lahan, daripada
             nanti harus memperbaiki banyak hal"
+                  name="soal1"
                 />
               </div>
               <div className="card">
@@ -76,6 +83,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 2"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 2"
+                  name="soal2"
                 />
               </div>
               <div className="card">
@@ -85,6 +93,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 3"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 3"
+                  name="soal3"
                 />
               </div>
               <div className="card">
@@ -94,6 +103,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 4"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 4"
+                  name="soal4"
                 />
               </div>
               <div className="card">
@@ -103,6 +113,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 5"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 5"
+                  name="soal5"
                 />
               </div>
               <div className="card">
@@ -112,6 +123,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 6"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 6"
+                  name="soal6"
                 />
               </div>
               <div className="card">
@@ -121,6 +133,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 7"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 7"
+                  name="soal7"
                 />
               </div>
               <div className="card">
@@ -130,6 +143,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 8"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 8"
+                  name="soal8"
                 />
               </div>
               <div className="card">
@@ -139,6 +153,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 9"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 9"
+                  name="soal9"
                 />
               </div>
               <div className="card">
@@ -148,6 +163,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 10"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 10"
+                  name="soal10"
                 />
               </div>
               <div className="card">
@@ -157,6 +173,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 11"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 11"
+                  name="soal11"
                 />
               </div>
               <div className="card">
@@ -166,6 +183,7 @@ class FormTwelve extends Component {
             sering"
                   choiceA="ini adalah opsi untuk pilihan jawaban pertama soal nomor 12"
                   choiceB="ini adalah opsi untuk pilihan jawaban kedua soal nomor 12"
+                  name="soal12"
                 />
                 <div className="content">
                   <div className="row clearfix mx-auto">

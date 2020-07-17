@@ -38,7 +38,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     1. Home                             --> mobile : --done; web: --done
     2. Login                            --> mobile : --done; web: --done
     3. Welcome                          --> mobile : --done; web: --done
-    4. Twelve Questions                 --> mobile : --****; web: --done
+    4. Twelve Questions                 --> mobile : --done; web: --done
     5. TwelveQuestions Result           --> mobile : --done; web: --done
     6. Fourty Eight Questions           --> mobile : --done; web: --done
     7. Fourty Eight Result Questions    --> mobile : --done; web: --done
