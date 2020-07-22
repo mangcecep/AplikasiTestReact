@@ -34,6 +34,13 @@ const FormQuestion = styled.section`
     }
     
     .container {
+      --warnaPertama: #673AE7;
+      --warnaKedua: #8661EF;
+      --warnaKetiga: #A58AF3;
+      --warnaKeempat: #979797;
+      --warnaKelima: #F7B75C;
+      --warnaKeenam: #F4A22D;
+      --warnaKetujuh: #CE7E0B;
       --first-color: #e91e63;
       --second-color: #bf00ff;
     }
@@ -58,11 +65,11 @@ const FormQuestion = styled.section`
     }
     
     .circle {
-      width: 60px;
-      height: 60px;
-      border: 1px solid var(--second-color);
+      width: 70px;
+      height: 70px;
+      border: 1px solid var(--warnaPertama);
       border-radius: 100%;
-      margin-right: 25px;
+      margin-right: 40px;
       position: relative;
     }
 
@@ -76,11 +83,11 @@ const FormQuestion = styled.section`
     }
     
     .circleTwo {
-      width: 50px;
-      height: 50px;
-      border: 1px solid var(--second-color);
+      width: 60px;
+      height: 60px;
+      border: 1px solid var(--warnaKedua);
       border-radius: 100%;
-      margin-right: 25px;
+      margin-right: 40px;
       position: relative;
     }
 
@@ -94,45 +101,45 @@ const FormQuestion = styled.section`
     }
     
     .circleThree {
-      width: 40px;
-      height: 40px;
-      border: 1px solid var(--second-color);
+      width: 50px;
+      height: 50px;
+      border: 1px solid var(--warnaKetiga);
       border-radius: 100%;
-      margin-right: 25px;
+      margin-right: 40px;
       position: relative;
     }
 
     .circleSeven {
-      width: 40px;
-      height: 40px;
-      border: 1px solid var(--second-color);
+       width: 70px;
+      height: 70px;
+      border: 1px solid var(--warnaKetujuh);
       border-radius: 100%;
-      margin-left: 25px;
+      margin-left: 40px;
       position: relative;
     }
     
     .circleFour {
-      width: 30px;
-      height: 30px;
-      border: 1px solid var(--second-color);
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--warnaKeempat);
       border-radius: 100%;
-      margin-right: 25px;
+      margin-right: 40px;
       position: relative;
     }
 
     .circleSix {
-      width: 30px;
-      height: 30px;
-      border: 1px solid var(--second-color);
+      width: 60px;
+      height: 60px;
+      border: 1px solid var(--warnaKeenam);
       border-radius: 100%;
-      margin-left: 10px;
+      margin-left: 40px;
       position: relative;
     }
     
     .circleFive {
-      width: 25px;
-      height: 25px;
-      border: 1px solid var(--second-color);
+      width: 50px;
+      height: 50px;
+      border: 1px solid var(--warnaKelima);
       border-radius: 100%;
       margin-right: 10px;
       position: relative;
@@ -165,14 +172,56 @@ const FormQuestion = styled.section`
       transform: scale(0);
       transform-origin: center center;
     }
-    
+
     .circle:before,
+    .circle::after {
+      background: var(--warnaPertama);
+      opacity: 0;
+      transition: 0.3s;
+    }
+
     .circleTwo:before,
+    .circleTwo::after {
+      background: var(--warnaKedua);
+      opacity: 0;
+      transition: 0.3s;
+    }
+
     .circleThree:before,
-    .circleFour:before,
+    .circleThree::after {
+      background: var(--warnaKetiga);
+      opacity: 0;
+      transition: 0.3s;
+    }
+
     .circleFive:before,
+    .circleFive::after {
+      background: var(--warnaKelima);
+      opacity: 0;
+      transition: 0.3s;
+    }
+
     .circleSix:before,
+    .circleSix::after {
+      background: var(--warnaKeenam);
+      opacity: 0;
+      transition: 0.3s;
+    }
+
     .circleSeven:before,
+    .circleSeven:after {
+      background: var(--warnaKetujuh);
+      opacity: 0;
+      transition: 0.3s;
+    }
+    
+    .circleFour:before,
+    .circleFour::after {
+      background: var(--warnaKeempat);
+      opacity: 0;
+      transition: 0.3s;
+    }
+
     .circleEight:before,
     .circleNine:before {
       background: var(--second-color);
@@ -180,13 +229,6 @@ const FormQuestion = styled.section`
       transition: 0.3s;
     }
     
-    .circle::after,
-    .circleTwo::after,
-    .circleThree::after,
-    .circleFour::after,
-    .circleFive::after,
-    .circleSix::after,
-    .circleSeven:after,
     .circleEight:after,
     .circleNine:after {
       background: var(--first-color);
@@ -211,40 +253,82 @@ const FormQuestion = styled.section`
       opacity: 1;
       transform: scale(1);
     }
-    
+
     input:hover + .circle,
-    input:focus + .circle,
+    input:focus + .circle {
+      border: 1px solid var(--warnaPertama);
+    }
+
     input:hover + .circleTwo,
-    input:focus + .circleTwo,
+    input:focus + .circleTwo {
+      border: 1px solid var(--warnaKedua);
+    }
+    
     input:hover + .circleThree,
-    input:focus + .circleThree,
+    input:focus + .circleThree {
+      border: 1px solid var(--warnaKetiga);
+    }
+
     input:hover + .circleFour,
-    input:focus + .circleFour,
+    input:focus + .circleFour {
+      border: 1px solid var(--warnaKeempat);
+    }
+
     input:hover + .circleFive,
-    input:focus + .circleFive,
+    input:focus + .circleFive {
+      border: 1px solid var(--warnaKelima);
+    }
+
     input:hover + .circleSix,
-    input:focus + .circleSix,
+    input:focus + .circleSix {
+      border: 1px solid var(--warnaKeenam);
+    }
+
     input:hover + .circleSeven,
-    input:focus + .circleSeven,
+    input:focus + .circleSeven {
+      border: 1px solid var(--warnaKetujuh);
+    }    
+    
     input:hover + .circleEight,
     input:focus + .circleEight {
       border: 1px solid var(--first-color);
     }
-    
+
     input:hover + .circle:before,
-    input:focus + .circle:before,
+    input:focus + .circle:before {
+      background: var(--warnaPertama);
+    }
+
     input:hover + .circleTwo:before,
-    input:focus + .circleTwo:before,
+    input:focus + .circleTwo:before {
+      background: var(--warnaKedua);
+    }
+    
     input:hover + .circleThree:before,
-    input:focus + .circleThree:before,
+    input:focus + .circleThree:before {
+      background: var(--warnaKetiga);
+    }
+
     input:hover + .circleFour:before,
-    input:focus + .circleFour:before,
+    input:focus + .circleFour:before {
+      background: var(--warnaKeempat);
+    }
+    
     input:hover + .circleFive:before,
-    input:focus + .circleFive:before,
+    input:focus + .circleFive:before {
+      background: var(--warnaKelima);
+    }
+
     input:hover + .circleSix:before,
-    input:focus + .circleSix:before,
+    input:focus + .circleSix:before {
+      background: var(--warnaKeenam);
+    }
+    
     input:hover + .circleSeven:before,
-    input:focus + .circleSeven:before,
+    input:focus + .circleSeven:before {
+      background: var(--warnaKetujuh);
+    }
+    
     input:hover + .circleEight:before,
     input:focus + .circleEight:before {
       background: var(--first-color);
@@ -294,7 +378,7 @@ const FormQuestion = styled.section`
       .circle {
         width: 30px;
         height: 30px;
-        border: 1px solid var(--second-color);
+        border: 1px solid var(--warnaPertama);
         border-radius: 100%;
         margin-right: 10px;
         position: relative;
@@ -312,7 +396,7 @@ const FormQuestion = styled.section`
       .circleTwo {
         width: 25px;
         height: 25px;
-        border: 1px solid var(--second-color);
+        border: 1px solid var(--warnaKedua);
         border-radius: 100%;
         margin-right: 10px;
         position: relative;
@@ -330,43 +414,43 @@ const FormQuestion = styled.section`
       .circleThree {
         width: 20px;
         height: 20px;
-        border: 1px solid var(--second-color);
+        border: 1px solid var(--warnaKetiga);
         border-radius: 100%;
         margin-right: 10px;
         position: relative;
       }
   
       .circleSeven {
-        width: 20px;
-        height: 20px;
-        border: 1px solid var(--second-color);
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--warnaKetujuh);
         border-radius: 100%;
         margin-left: 10px;
         position: relative;
       }
       
       .circleFour {
-        width: 15px;
-        height: 15px;
-        border: 1px solid var(--second-color);
+        width: 18px;
+        height: 18px;
+        border: 1px solid var(--warnaKeempat);
         border-radius: 100%;
         margin-right: 10px;
         position: relative;
       }
   
       .circleSix {
-        width: 15px;
-        height: 15px;
-        border: 1px solid var(--second-color);
+        width: 25px;
+        height: 25px;
+        border: 1px solid var(--warnaKeenam);
         border-radius: 100%;
         margin-left: 5px;
         position: relative;
       }
       
       .circleFive {
-        width: 15px;
-        height: 15px;
-        border: 1px solid var(--second-color);
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--warnaKelima);
         border-radius: 100%;
         margin-right: 5px;
         position: relative;
@@ -465,24 +549,6 @@ function FourtyEightQuest(props) {
                   onChange={handleChange}
                 />
                 <span className="circleSeven"></span>
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name={name}
-                  value="8"
-                  onChange={handleChange}
-                />
-                <span className="circleEight"></span>
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name={name}
-                  value="9"
-                  onChange={handleChange}
-                />
-                <span className="circleNine"></span>
               </label>
             </section>
           </div>

@@ -12,6 +12,17 @@ const BgWrapper = styled.section`
     background-size: 120% 100%;
     margin-top: -108px;
     padding-top: 200px;
+    h3, p.mt-4 {
+      @font-face {
+        font-family: "Poppins ExtraBold";
+        src: local("Poppins ExtraBold"),
+          url(../../assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+      }
+      font-family: "Poppins ExtraBold";
+    }
+    p {
+      font-size: 14px;
+    }
     img.char {
       margin-top: 30px;
       margin-left: 190px;
@@ -30,6 +41,12 @@ const BgWrapper = styled.section`
     }
 
   @media screen and (max-width: 420px) {
+    h3, p.mt-4 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 11px;
+    }
     background-image: none;
     img.backgroundChar {
       display: none;
@@ -59,7 +76,7 @@ function HeaderProfile() {
             <strong>Kareakter Umum</strong>
           </p>
           <p>
-            Penajaga yang baik, dapat diandalkan, sabar, berhati-hati, berbasis
+            Penjaga yang baik, dapat diandalkan, sabar, berhati-hati, berbasis
             fakta, safety-player, terstruktur, unggul dengan analis informasi,
             cerdas dalam mengelola reseko.
           </p>

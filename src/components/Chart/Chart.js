@@ -32,7 +32,7 @@ const captions = {
 function Chart() {
   return (
     <div className="card align-center">
-      <RadarChart captions={captions} data={data} size={250} />
+      <RadarChart captions={captions} data={data} size={320} />
     </div>
   );
 }

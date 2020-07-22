@@ -45,7 +45,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     8. Premium Page                     --> mobile : --done; web: --done
     9. Profile Page                     --> mobile : --done; web: --done
 
-## Revisi
+## Revisi & Debugging
 
-    1. pas ke slide ke 2 dst, pilihan ga bisa di klik -> done
-    2. logo ada garis -> done
+    1. pas ke slide ke 2 dst, pilihan ga bisa di klik   -> done
+    2. logo ada garis                                   -> done
+    3. jumlah opsi jadi 7 --> 3 kiri 1 tengah 3 kanan
+       kiri ungu, paling kanan cokelat, makin ke tengah 
+       abu2                                             -> done
+    4. tampilan mobile di page profile                  -> ****
+    5. lingkaran hijau dengan css                       -> done
