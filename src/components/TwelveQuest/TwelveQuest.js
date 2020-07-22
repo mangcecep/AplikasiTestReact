@@ -148,8 +148,12 @@ const Radiobtn = styled.div`
   }
 `;
 
+const handleChange = (e) => {
+  console.log({ value: e.target.value });
+};
+
 function TwelveQuest(props) {
-  const { number, question, choiceA, choiceB, name } = props;
+  const { number, question, choiceA, choiceB, name, idA, idB } = props;
   return (
     <FormQuestion>
       <div className="row clearfix">
@@ -161,14 +165,14 @@ function TwelveQuest(props) {
         <div className="col-lg-11 col-md-11 col-sm-11">
           <div className="form-group ml-5 pl-2 pt-2 pb-2 text-dark">
             <Radiobtn>
-              <input type="radio" id="huey" name={name} value="1" />
-              <label htmlFor="huey">{choiceA}</label>
+              <input type="radio" id={idA} name={name} value="A" onChange={handleChange}/>
+              <label htmlFor={idA}>{choiceA}</label>
             </Radiobtn>
           </div>
           <div className="form-group ml-5 pl-2 pt-2 pb-2 text-dark">
             <Radiobtn>
-              <input type="radio" id="dewey" name={name} value="2" />
-              <label htmlFor="dewey">{choiceB}</label>
+              <input type="radio" id={idB} name={name} value="B" onChange={handleChange}/>
+              <label htmlFor={idB}>{choiceB}</label>
             </Radiobtn>
           </div>
         </div>

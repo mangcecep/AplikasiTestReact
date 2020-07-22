@@ -56,7 +56,7 @@ class FormFourtyEight extends Component {
   render() {
     const settings = {
       zIndex: -1,
-      arrows: true,
+      arrows: false,
       dots: false,
       fade: false,
       infinite: false,
