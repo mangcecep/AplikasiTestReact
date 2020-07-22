@@ -47,4 +47,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Revisi
 
-1. pas ke slide ke 2 dst, pilihan ga bisa di klik -> done
+    1. pas ke slide ke 2 dst, pilihan ga bisa di klik -> done
+    2. logo ada garis -> done

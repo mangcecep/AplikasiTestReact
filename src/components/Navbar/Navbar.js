@@ -19,6 +19,9 @@ const NavHeader = styled.nav`
   .registerButton {
     box-shadow: 1px 3px 5px grey;
   }
+  .navbar-brand  {
+    border-bottom: none;
+  }
 `;
 
 const Navbar = (props) => {
@@ -32,7 +35,7 @@ const Navbar = (props) => {
     <NavHeader className="navbar navbar-expand-lg">
       <div className="container">
         <Link to="/" className="navbar-brand">
-          <img src={logo.url} alt={logo.alt} width="150px" height="auto" />
+          <img src={logo.url} alt={logo.alt} width="150px" height="auto" className="logo"/>
         </Link>
         <button
           className="navbar-toggler"
