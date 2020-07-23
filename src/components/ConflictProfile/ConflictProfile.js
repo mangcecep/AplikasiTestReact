@@ -1,9 +1,50 @@
 import React from "react";
 import CardConflict from "../CardConflict";
+import styled from "styled-components";
+
+const Conflict = styled.section`
+  .jumbotron {
+    background-color: #F8F8F5;
+  }
+
+  h4 {
+    margin-top:-40px;
+    @font-face {
+      font-family: "Poppins ExtraBold";
+      src: local("Poppins ExtraBold"),
+        url(../../assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+    }
+    font-family: "Poppins ExtraBold";
+  }
+  p {
+    @font-face {
+      font-family: "Poppins SemiBold";
+      src: local("Poppins SemiBold"),
+        url(../../assets/fonts/Poppins-SemiBold.ttf) format("truetype");
+    }
+    font-family: "Poppins SemiBold";
+  }
+
+  span {
+    @font-face {
+      font-family: "Poppins ExtraBold";
+      src: local("Poppins ExtraBold"),
+        url(../../assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+    }
+    font-family: "Poppins ExtraBold";
+  }
+
+  @media screen and (max-width: 420px) {
+    h4 {
+      margin-top:-20px;
+    }
+  }
+`;
 
 function ConflictProfile() {
   return (
-    <section className="jumbotron">
+    <Conflict className="container">
+      <div className="jumbotron">
       <h4 className="text-center">
         Konflik antara orang-orang yang berbeda profil
       </h4>
@@ -15,7 +56,7 @@ function ConflictProfile() {
         mempertajam gagasan/ ide, atau menunjukan adanya kesalahpahaman.
       </p>
       <p>
-        <strong>Primer</strong>{" "}
+        <span>Primer</span>{" "}
       </p>
       <div className="row clearfix">
         <div className="col-lg-6 col-md-6 col-sm-6">
@@ -56,7 +97,7 @@ function ConflictProfile() {
         </div>
       </div>
       <p>
-        <strong>Sekunder</strong>{" "}
+        <span>Sekunder</span>{" "}
       </p>
       <div className="row clearfix">
         <div className="col-lg-6 col-md-6 col-sm-6">
@@ -83,7 +124,7 @@ function ConflictProfile() {
         </div>
       </div>
       <p>
-        <strong>Tersier</strong>{" "}
+        <span>Tersier</span>{" "}
       </p>
       <div className="row clearfix">
         <div className="col-lg-6 col-md-6 col-sm-6">
@@ -109,7 +150,8 @@ function ConflictProfile() {
           </div>
         </div>
       </div>
-    </section>
+      </div>
+    </Conflict>
   );
 }
 

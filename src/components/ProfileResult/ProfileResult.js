@@ -23,14 +23,14 @@ const Row = styled.div`
   }
   @media screen and (max-width: 420px) {
     .picture {
-      margin-left: -20px;
+      margin-left: 10px;
       position: absolute;
       width: 30%;
       height: auto;
     }
     .text {
       margin-top: 10px;
-      margin-left: 100px;
+      margin-left: 150px;
       font-size: 7px;
     }
   }

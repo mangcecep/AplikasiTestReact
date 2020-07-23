@@ -1,11 +1,11 @@
 import React from "react";
-import { BackgroundLayerCopydImage, OvalCopypngImage } from "../images";
+import { BackgroundLayerCopydImage } from "../images";
 import CardElement from "../CardElement";
 
 import styled from "styled-components";
 
 const Char = styled.section`
-h3, h4 {
+h4 {
   margin-top:-40px;
   @font-face {
     font-family: "Poppins ExtraBold";
@@ -28,7 +28,6 @@ p {
   background-color: #F8F8F5;
 }
 `;
-
 function Characteristic() {
   return (
     <Char className="container">
@@ -68,17 +67,13 @@ function Characteristic() {
           <CardElement
             src={BackgroundLayerCopydImage.url}
             alt={BackgroundLayerCopydImage.url}
+            displayCircle="none"
             title="Element : Samudera"
-            text="Melambungkan keluasan dan kelapangan, sebaai muara yang menerima
-              berbagai aliran air. Seorang yang berpikiran terbuka, bersedia
-              menyerap bebrbagai hal baru, mau menerima masukan dengan lapang
-              dada."
+            text="Melambungkan keluasan dan kelapangan, sebagai muara yang menerima berbagai aliran air. Seorang yang berpikiran terbuka, bersedia menyerap bebrbagai hal baru, mau menerima masukan dengan lapang dada."
           />
           <CardElement
-            src={OvalCopypngImage.url}
-            alt={OvalCopypngImage.alt}
             title="Warna : Tosca"
-            text="Warna yang melambangkan konsentrasi, keseimbangan emosional, stabilitas diri, dan juga kesabaran, yang menghadirkan kejernihan pikiran dan kepercayaan diri, mengendalikan dan menyembuhkan untuk."
+            text="Warna yang melambangkan konsentrasi, keseimbangan emosional, stabilitas diri, dan juga kesabaran, yang menghadirkan kejernihan pikiran dan kepercayaan diri, mengendalikan dan menyembuhkan."
           />
         </div>
       </div>

@@ -2,6 +2,27 @@ import React from "react";
 import styled from "styled-components";
 import { RectangleCopy73jpgImage } from "../images";
 
+const Role = styled.section`
+.jumbotron {
+  background-color: #F8F8F5;
+}
+h4 {
+  margin-top:-40px;
+  @font-face {
+    font-family: "Poppins ExtraBold";
+    src: local("Poppins ExtraBold"),
+      url(../../assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+  }
+  font-family: "Poppins ExtraBold";
+}
+
+@media screen and (max-width: 420px) {
+  h4 {
+    margin-top:-20px;
+  }
+}
+`;
+
 const Col = styled.div`
   background-image: url("${RectangleCopy73jpgImage.url}");
 `;
@@ -21,7 +42,8 @@ function IndustryRoleModel() {
     );
   }
   return (
-    <section className="jumbotron py-4">
+    <Role className="container">
+      <div className="jumbotron">
       <h4 className="text-center">Role model - Industri</h4>
       <div className="row clearfix">
         <div className="col-lg-6 col-md-6 col-sm-6">
@@ -56,7 +78,8 @@ function IndustryRoleModel() {
           <div className="col-lg-1 col-md-1 col-sm-1"></div>
         </div>
       </div>
-    </section>
+      </div>
+    </Role>
   );
 }
 

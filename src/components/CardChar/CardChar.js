@@ -7,7 +7,17 @@ const Card = styled.div`
   background-image: url("${RectangleCopy13jpgImage.url}");
   background-size: cover;
   background-repeat: no-repeat;
-  
+
+  @media screen and (max-width: 420px) {
+    margin-bottom: -15px;
+    background-image: url("${RectangleCopy13jpgImage.url}");
+    border-radius: 10px;
+    background-size: 100% 80%;
+  }
+  p {
+    font-size : 12px;
+    margin-right: 2px;
+  }
 `;
 
 function CardChar(props) {

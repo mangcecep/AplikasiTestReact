@@ -19,7 +19,7 @@ function CardStarValue(props) {
     );
   }
   return (
-    <div className="card bg-light">
+    <div className="card bg-white text-dark">
       <div className="row clearfix">
         <div className="col-lg-2 col-md-2 col-sm-2">
           <p className="text-center my-auto py-4">

@@ -21,7 +21,13 @@ const BgWrapper = styled.section`
       font-family: "Poppins ExtraBold";
     }
     p {
-      font-size: 14px;
+      @font-face {
+        font-family: "Poppins Medium";
+        src: local("Poppins ExtraBold"),
+          url(../../assets/fonts/Poppins-Medium.ttf) format("truetype");
+      }
+      font-size: 15px;
+      font-family: "Poppins Medium";
     }
     img.char {
       margin-top: 30px;

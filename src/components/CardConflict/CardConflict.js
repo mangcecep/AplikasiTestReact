@@ -5,7 +5,7 @@ function CardConflict(props) {
   return (
     <div className="card bg-white text-dark py-4 px-4">
       <p>
-        <strong>{title}</strong>
+        <span>{title}</span>
       </p>
       <p>{subtitle}</p>
       <p>{text}</p>

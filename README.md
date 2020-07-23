@@ -52,5 +52,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     3. jumlah opsi jadi 7 --> 3 kiri 1 tengah 3 kanan
        kiri ungu, paling kanan cokelat, makin ke tengah 
        abu2                                             -> done
-    4. tampilan mobile di page profile                  -> ****
+    4. tampilan mobile di page profile                  -> done
     5. lingkaran hijau dengan css                       -> done

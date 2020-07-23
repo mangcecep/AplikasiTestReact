@@ -1,9 +1,50 @@
 import React from "react";
 import CardStarValue from "../CardStarValue";
+import styled from "styled-components";
+
+const ProfIns = styled.section`
+.jumbotron {
+  background-color: #F8F8F5;
+}
+
+h4 {
+  margin-top:-40px;
+  @font-face {
+    font-family: "Poppins ExtraBold";
+    src: local("Poppins ExtraBold"),
+      url(../../assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+  }
+  font-family: "Poppins ExtraBold";
+}
+p {
+  @font-face {
+    font-family: "Poppins SemiBold";
+    src: local("Poppins SemiBold"),
+      url(../../assets/fonts/Poppins-SemiBold.ttf) format("truetype");
+  }
+  font-family: "Poppins SemiBold";
+}
+
+span {
+  @font-face {
+    font-family: "Poppins ExtraBold";
+    src: local("Poppins ExtraBold"),
+      url(../../assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+  }
+  font-family: "Poppins ExtraBold";
+}
+
+@media screen and (max-width: 420px) {
+  h4 {
+    margin-top:-20px;
+  }
+}
+`;
 
 function ProfileInstinct() {
   return (
-    <section className="jumbotron">
+    <ProfIns className="container">
+      <div className="jumbotron">
       <h4 className="text-center">
         Naluri alami Anda dalam penciptaan kekayaan dan kesuksesan
       </h4>
@@ -44,7 +85,8 @@ function ProfileInstinct() {
         subtitle="Kreativitas ide merupakan hal yang kurang diperhatikan dan kadang
         berpengaruh dalam pengambilan keputusan, inovasi baru."
       />
-    </section>
+      </div>
+    </ProfIns>
   );
 }
 
